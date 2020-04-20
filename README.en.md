@@ -1,4 +1,4 @@
-## Modelo Covid 19 basado en ... <a href="../../blob/master/README.es.md"><img src="../../blob/master/images/Flag_of_Spain.png" align="right" hspace="0" vspace="0" width="35px"></a> <a href="../../blob/master/README.en.md"><img src="../../blob/master/images/Flag_of_Union.png" align="right" hspace="0" vspace="0" width="35px"></a>
+## Covid 19 model based on ... <a href="../../blob/master/README.es.md"><img src="../../blob/master/images/Flag_of_Spain.png" align="right" hspace="0" vspace="0" width="35px"></a> <a href="../../blob/master/README.en.md"><img src="../../blob/master/images/Flag_of_Union.png" align="right" hspace="0" vspace="0" width="35px"></a>
 
 You can use the [editor on GitHub](https://github.com/mmatabuena/forecastCovid/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
