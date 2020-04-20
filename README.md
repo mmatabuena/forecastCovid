@@ -6,6 +6,9 @@ Ir  a la web principal [https://mmatabuena.github.io/forecastCovid/.](https://mm
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
+<img src="./blob/master/images/image_2020_04_19T13_34_22_302Z.jpg" align="left" hspace="20" vspace="10" width="350px">
+
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
