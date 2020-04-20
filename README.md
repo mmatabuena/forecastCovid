@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to GitHub Pages <a href="./blob/master/README.es.md"><img src="./blob/master/img/Flag_of_Spain.png" align="right" hspace="0" vspace="0" width="35px"></a> <a href="./blob/master/README.en.md"><img src="./blob/master/img/Flag_of_Union.png" align="right" hspace="0" vspace="0" width="35px"></a>
 
 You can use the [editor on GitHub](https://github.com/mmatabuena/forecastCovid/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
@@ -6,7 +6,8 @@ Ir  a la web principal [https://mmatabuena.github.io/forecastCovid/.](https://mm
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-<img src="./blob/master/images/image_2020_04_19T13_34_22_302Z.jpg" align="left" hspace="20" vspace="10" width="350px">
+
+<img src="./images/image_2020_04_19T13_34_22_302Z.jpg" align="left" hspace="20" vspace="10" width="350px">
 
 
 ### Markdown
