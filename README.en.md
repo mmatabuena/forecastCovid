@@ -2,6 +2,8 @@
 
 Go to the main page [https://mmatabuena.github.io/forecastCovid/.](https://mmatabuena.github.io/forecastCovid/.)
 
+<img src="./images/image_2020_04_19T13_34_22_302Z.jpg" align="left" hspace="20" vspace="10" width="150px">
+
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
