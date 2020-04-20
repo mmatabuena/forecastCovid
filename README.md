@@ -1,4 +1,4 @@
-# Forecast Covid [www.covidLink](https://mmatabuena.github.io/forecastCovid/.)
+# [www.covidLink](https://mmatabuena.github.io/forecastCovid/.)
 
 ## Select your Language / Elige tu idioma
 
