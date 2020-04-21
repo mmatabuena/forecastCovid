@@ -1,6 +1,6 @@
 # [www.forecastCovid](https://mmatabuena.github.io/forecastCovid/.)
 
-## Select your Language / Elige tu idioma
+## Select your Language 
 
 * [English](README.en.md) <a href="../../blob/master/README.en.md"><img src="../../blob/master/images/Flag_of_Union.png" align="none" hspace="5" vspace="0" width="25px"></a>
 
