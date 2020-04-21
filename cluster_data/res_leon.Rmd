@@ -19,23 +19,43 @@ library("ggplot2")
 # datosfda= fdata(trayectorias)
 # plot(datosfda)
 
-setwd("~/Modelo_Covid_descargado/Results/Navarra/")
+#setwd("~/Modelo_Covid_descargado/Results/Leon/")
+
+##############################
+##### CAMBIAR DENDE AQUÍ #####
+##############################
+
+i=7 #indice da autonomia
+
+i1_raw= read.table("~/Modelo_Covid_descargado/Results/Leon/SimulaLeon_I1.txt")
+i2_raw= read.table("~/Modelo_Covid_descargado/Results/Leon/SimulaLeon_I2.txt")
+i3_raw= read.table("~/Modelo_Covid_descargado/Results/Leon/SimulaLeon_I3.txt")
+r1_raw= read.table("~/Modelo_Covid_descargado/Results/Leon/SimulaLeon_R1.txt")
+r2_raw= read.table("~/Modelo_Covid_descargado/Results/Leon/SimulaLeon_R2.txt")
+mortos_raw=read.table("~/Modelo_Covid_descargado/Results/Leon/SimulaLeon_XM.txt")
+erro=read.table("~/Modelo_Covid_descargado/Results/Leon/SimulaLeon_Error.txt")
 
 autonomias=read.csv("~/Modelo_Covid_descargado/Data/Autonomias.csv",header=TRUE,sep='\t')
 
-i=15 #indice da autonomia, no futuro un bucle for
+reais=read.csv("~/Modelo_Covid_descargado/Data/ccaa_covid19_fallecidos.csv",header=TRUE,sep=',')
 
-i1_raw= read.table("~/Modelo_Covid_descargado/Results/Navarra/SimulaNavarra_I1.txt")
-i2_raw= read.table("~/Modelo_Covid_descargado/Results/Navarra/SimulaNavarra_I2.txt")
-i3_raw= read.table("~/Modelo_Covid_descargado/Results/Navarra/SimulaNavarra_I3.txt")
-r1_raw= read.table("~/Modelo_Covid_descargado/Results/Navarra/SimulaNavarra_R1.txt")
-r2_raw= read.table("~/Modelo_Covid_descargado/Results/Navarra/SimulaNavarra_R2.txt")
-mortos_raw=read.table("~/Modelo_Covid_descargado/Results/Navarra/SimulaNavarra_XM.txt")
-erro=read.table("~/Modelo_Covid_descargado/Results/Navarra/SimulaNavarra_Error.txt")
+####################
+##### ATA AQUI #####
+####################
+
+reaisi=as.numeric(reais[(reais$cod_ine)==i,])
+
+nceros=0
+j=0
+while(reaisi[j+3]==0) {
+  nceros=nceros+1
+  j=j+1
+  }
+
 
 
 d=ncol(mortos_raw)
-r=0 #numero de dias con antelacion cos que empeza o simulador
+r= 18-nceros#numero de dias con antelacion cos que empeza o simulador
 
 datas=seq( as.Date("2020-03-03")-r, by=1, len=d-1)
 names(i1_raw)[-1]=format(datas,"%Y-%m-%d")
