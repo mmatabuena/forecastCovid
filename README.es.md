@@ -6,5 +6,5 @@ Web de resultados del modelo: [www.forecastCovid](https://mmatabuena.github.io/f
 <img src="./images/image_2020_04_19T13_34_22_302Z.jpg" align="left" hspace="20" vspace="10" width="150px">
 
 
-### Soporte o Contacto
+### Soporte y Contacto
 Tienes problemas con esta página ? Revisa la documentación de [documentation](https://help.github.com/categories/github-pages-basics/) o [contact support](https://github.com/contact) e intentaremos resolverlo.
