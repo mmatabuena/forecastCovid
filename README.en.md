@@ -7,4 +7,4 @@ Voltar a páxina principal [www.forecastCovid](https://mmatabuena.github.io/fore
 
 ### Soporte e contacto
 
-Tes problemas cas paxinas? Comproba a documentación [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) e axudaremoste a resolvelo.
+Problems with this pages? Check [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we will help you to solve it. 
