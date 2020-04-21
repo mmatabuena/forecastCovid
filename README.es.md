@@ -7,4 +7,4 @@ Web de resultados del modelo: [https://mmatabuena.github.io/forecastCovid/.)](ht
 
 
 ### Soporte y Contacto
-Tienes problemas con esta página? Revisa la [documentación] (https://help.github.com/categories/github-pages-basics/) o [contacta con el soporte](https://github.com/contact) e intentaremos resolverlo.
+Tienes problemas con esta página? Revisa la [documentación](https://help.github.com/categories/github-pages-basics/) o [contacta con el soporte](https://github.com/contact) e intentaremos resolverlo.
