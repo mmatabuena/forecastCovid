@@ -2,10 +2,10 @@
 
 Visualization of data provided by the Government: [https://mmatabuena.github.io/forecastCovid/real.](https://mmatabuena.github.io/forecastCovid/Rmds/real/index.html)
 
-* __[Galicia](https://mmatabuena.github.io/forecastCovid/Rmds/gal/index.html)__
-* __[Castilla y León](https://mmatabuena.github.io/forecastCovid/Rmds/cl/index.html)__
-* __[Cataluña](https://mmatabuena.github.io/forecastCovid/Rmds/cat/index.html)__
-* __[País Vasco](https://mmatabuena.github.io/forecastCovid/Rmds/pv/index.html)__
+* :chart_with_upwards_trend: __[Galicia](https://mmatabuena.github.io/forecastCovid/Rmds/gal/index.html)__
+* :chart_with_upwards_trend: __[Castilla y León](https://mmatabuena.github.io/forecastCovid/Rmds/cl/index.html)__
+* :chart_with_upwards_trend: __[Cataluña](https://mmatabuena.github.io/forecastCovid/Rmds/cat/index.html)__
+* :chart_with_upwards_trend: __[País Vasco](https://mmatabuena.github.io/forecastCovid/Rmds/pv/index.html)__
 
 <img src="./images/image_2020_04_19T13_34_22_302Z.jpg" align="left" hspace="20" vspace="10" width="150px">
 
