@@ -2,16 +2,10 @@
 
 Web con visualización de datos aportados polo Goberno: [https://mmatabuena.github.io/forecastCovid/real.](https://mmatabuena.github.io/forecastCovid/Rmds/real/index.html)
 
-Web cos resultados para Galicia: [https://mmatabuena.github.io/forecastCovid/gal.](https://mmatabuena.github.io/forecastCovid/Rmds/gal/index.html)
-
-Web cos resultados para Castela e León:
-[https://mmatabuena.github.io/forecastCovid/leon.](https://mmatabuena.github.io/forecastCovid/Rmds/cl/index.html)
-
-Web cos resultados para Cataluña: [https://mmatabuena.github.io/forecastCovid/cataluna.](https://mmatabuena.github.io/forecastCovid/Rmds/cat/index.html)
-
-Web cos resultados para Euskadi: [https://mmatabuena.github.io/forecastCovid/vasco.](https://mmatabuena.github.io/forecastCovid/Rmds/pv/index.html)
-
-
+* __[Galicia](https://mmatabuena.github.io/forecastCovid/Rmds/gal/index.html)__
+* __[Castilla y León](https://mmatabuena.github.io/forecastCovid/Rmds/cl/index.html)__
+* __[Cataluña](https://mmatabuena.github.io/forecastCovid/Rmds/cat/index.html)__
+* __[País Vasco](https://mmatabuena.github.io/forecastCovid/Rmds/pv/index.html)__
 
 <img src="./images/image_2020_04_19T13_34_22_302Z.jpg" align="left" hspace="20" vspace="10" width="150px">
 
