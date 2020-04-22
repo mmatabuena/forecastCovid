@@ -1,0 +1,64 @@
+---
+title: "Death data visualization"
+author: "Carlos Meijide García"
+output:
+  html_document:
+    df_print: paged
+---
+
+```{r}
+
+library("tidyr")
+library("ggplot2")
+reais=read.csv("~/Modelo_Covid_descargado/Data/ccaa_covid19_fallecidos.csv",header=TRUE,sep=',')
+autonomias=read.csv("~/Modelo_Covid_descargado/Data/Autonomias.csv",header=TRUE,sep='\t')
+
+d=ncol(reais)
+pob=autonomias$Población
+pormil=diag(1 / pob) %*% as.matrix(reais[,3:d])
+
+reaispormil=reais
+reaispormil[,3:d]=pormil
+
+
+
+datas=seq( as.Date("2020-03-03"), by=1, len=d-2)
+names(reaispormil)[-c(1,2)]=format(datas,"%Y-%m-%d")
+names(reais)[-c(1,2)]=format(datas,"%Y-%m-%d")
+
+reaislong=gather(reaispormil,key="dia",value="cantos",-cod_ine,-CCAA)
+reaislong$dia=as.Date(reaislong$dia)
+
+ggplot(reaislong) +
+  geom_line(aes(dia, cantos,group=CCAA,colour=CCAA)) +
+  scale_x_date() +
+    theme_minimal(base_size = 14) + #tamanho da letra
+  theme(
+    legend.title = element_blank(),
+    panel.grid.minor = element_blank(),
+    legend.position = "bottom",
+    plot.margin = margin(3,15,3,3,"mm")
+  ) +
+  coord_cartesian(clip = "off") +
+
+  labs(x = "Date", y = "", 
+       subtitle = paste("Dead people per 1000 inhabitants data given by the Spanish government"))
+
+reaislong2=gather(reais,key="dia",value="cantos",-cod_ine,-CCAA)
+reaislong2$dia=as.Date(reaislong$dia)
+
+ggplot(reaislong2) +
+  geom_line(aes(dia,cantos+1,colour=CCAA)) +
+  scale_x_date() +
+  scale_y_log10() +
+ theme_minimal(base_size = 14) + #tamanho da letra
+  theme(
+    legend.title = element_blank(),
+    panel.grid.minor = element_blank(),
+    legend.position = "bottom",
+    plot.margin = margin(3,15,3,3,"mm")
+  ) + 
+  labs(x = "Date", y = "", 
+       subtitle = paste("log-scale dead people data given by the Spanish government"))
+```
+
