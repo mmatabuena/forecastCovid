@@ -44,4 +44,3 @@ El archivo <../cluster_data/Galicia/ParInit_Optimos_Exp6.txt> contiene los sigui
  ERROR !!!!! 0
  ERROR !!!!! 0
  ERROR !!!!! 0
- ERROR !!!!! 0
