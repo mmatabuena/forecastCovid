@@ -27,17 +27,18 @@ library("ggplot2")
 
 i=9 #indice da autonomia
 
-i1_raw= read.table("~/Modelo_Covid_descargado/Results/Cataluna/SimulaCataluna_I1.txt")
-i2_raw= read.table("~/Modelo_Covid_descargado/Results/Cataluna/SimulaCataluna_I2.txt")
-i3_raw= read.table("~/Modelo_Covid_descargado/Results/Cataluna/SimulaCataluna_I3.txt")
-r1_raw= read.table("~/Modelo_Covid_descargado/Results/Cataluna/SimulaCataluna_R1.txt")
-r2_raw= read.table("~/Modelo_Covid_descargado/Results/Cataluna/SimulaCataluna_R2.txt")
-mortos_raw=read.table("~/Modelo_Covid_descargado/Results/Cataluna/SimulaCataluna_XM.txt")
-erro=read.table("~/Modelo_Covid_descargado/Results/Cataluna/SimulaCataluna_Error.txt")
+i1_raw= read.table("../src/Results/Cataluna/SimulaCataluna_I1.txt")
+i2_raw= read.table("../src/Results/Cataluna/SimulaCataluna_I2.txt")
+i3_raw= read.table("../src/Results/Cataluna/SimulaCataluna_I3.txt")
+r1_raw= read.table("../src/Results/Cataluna/SimulaCataluna_R1.txt")
+r2_raw= read.table("../src/Results/Cataluna/SimulaCataluna_R2.txt")
+mortos_raw=read.table("../src/Results/Cataluna/SimulaCataluna_XM.txt")
+erro=read.table("../src/Results/Cataluna/SimulaCataluna_Error.txt")
 
-autonomias=read.csv("~/Modelo_Covid_descargado/Data/Autonomias.csv",header=TRUE,sep='\t')
+autonomias=read.csv("../cluster_data/Autonomias.csv",header=TRUE,sep='\t')
 
-reais=read.csv("~/Modelo_Covid_descargado/Data/ccaa_covid19_fallecidos.csv",header=TRUE,sep=',')
+reais=read.csv("../cluster_data/ccaa_covid19_fallecidos.csv",header=TRUE,sep=',')
+
 
 ####################
 ##### ATA AQUI #####

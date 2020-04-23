@@ -1,8 +1,0 @@
-Versión 0.2.0 2020/04/19 02:10
-(Simulador de Circuito Paralelizado con OpenMP)
-
-Empleando la función Tasa de transmisión R0: A*e^(-(B+C/10*(x-F)+D/100*(x-F)^2+E/1000*(X-F)^3)) 
-El archivo </home/carlos/repodir/forecastCovid/Data/Galicia/ParInit_Optimos_08_006_Exp4.txt> contiene los siguientes valores
-  -> 0 0 2 1 0.8 0.06 5.807 0.948 5.807 0.948 9 14 6.67 2.55 5 10 7 14 0.988 -1.016 0.37 0.774 0 0 0 0 0 
-
-Los datos originales eran desde el día  hasta el día 
