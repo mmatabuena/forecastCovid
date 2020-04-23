@@ -1,3 +1,4 @@
+#!/bin/bash
 'Executando o código de simulación para as autonomías'
 ./runsimular_paral 20 500000 1000 "../cluster_data/Galicia/ParInit_Optimos_Exp6.txt" "Galicia" | tee Ejemplo_Galicia.txt
 ./runsimular_paral 20 500000 1000 "../cluster_data/Cataluna/ParInit_Optimos_Exp6.txt" "Cataluna" | tee Ejemplo_Cataluna.txt
