@@ -2,8 +2,8 @@
 title: "Resultados"
 author: "Carlos Meijide Garcia"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -35,9 +35,10 @@ r2_raw= read.table("../src/Results/Leon/SimulaLeon_R2.txt")
 mortos_raw=read.table("../src/Results/Leon/SimulaLeon_XM.txt")
 erro=read.table("../src/Results/Leon/SimulaLeon_Error.txt")
 
-autonomias=read.csv("../cluster_data/Autonomias.csv",header=TRUE,sep='\t')
+autonomias=read.csv("../Data/Autonomias.csv",header=TRUE,sep='\t')
 
-reais=read.csv("../cluster_data/ccaa_covid19_fallecidos.csv",header=TRUE,sep=',')
+reais=read.csv("../Data/ccaa_covid19_fallecidos.csv",header=TRUE,sep=',')
+
 
 ####################
 ##### ATA AQUI #####
