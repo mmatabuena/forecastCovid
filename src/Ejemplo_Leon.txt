@@ -1,8 +1,0 @@
-Versión 0.2.0 2020/04/19 02:10
-(Simulador de Circuito Paralelizado con OpenMP)
-
-Empleando la función Tasa de transmisión R0: A*e^(-(B+C/10*(x-F)+D/100*(x-F)^2+E/1000*(X-F)^3)) 
-El archivo <../Data/Leon/ParInit_Optimos_Exp6.txt> contiene los siguientes valores
-  -> 0 0 2 1 0.81 0.056 5.807 0.948 5.807 0.948 9 14 6.67 2.55 5 10 7 14 0.632029 -0.25483 0.0442811 0.0901843 0.833511 0.0480953 0 0 0 
-
-Los datos originales eran desde el día  hasta el día 
