@@ -85,7 +85,7 @@ mord$dia=as.Date(mord$dia)
 
 ggplot(mord) +
   geom_line(aes(dia, 100*cantos/autonomias$Población[i],group= V1,alpha=exp(-dis^2)),colour='#00C08D',show.legend=FALSE) +
-  geom_line(data=mord[mord$dis==-1,],aes(dia, 100*cantos/autonomias$Población[i]),colour='black') +
+  geom_point(data=mord[mord$dis==-1,],aes(dia, 100*cantos/autonomias$Población[i]),colour='black') +
   scale_x_date() +
   theme_bw() +
   labs(x = "Date", y = "", 
