@@ -6,6 +6,10 @@
 	-moz-box-sizing: border-box;
 }
 
+ul {
+    margin-left: 30px;
+}
+
 h1 {
 	margin: 1em 0;
 	text-align: center;
