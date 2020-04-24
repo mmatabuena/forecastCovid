@@ -35,9 +35,9 @@ r2_raw= read.table("../src/Results/Vasco/SimulaVasco_R2.txt")
 mortos_raw=read.table("../src/Results/Vasco/SimulaVasco_XM.txt")
 erro=read.table("../src/Results/Vasco/SimulaVasco_Error.txt")
 
-autonomias=read.csv("../cluster_data/Autonomias.csv",header=TRUE,sep='\t')
+autonomias=read.csv("../Data/Autonomias.csv",header=TRUE,sep='\t')
 
-reais=read.csv("../cluster_data/ccaa_covid19_fallecidos.csv",header=TRUE,sep=',')
+reais=read.csv("../Data/ccaa_covid19_fallecidos.csv",header=TRUE,sep=',')
 
 ####################
 ##### ATA AQUI #####
