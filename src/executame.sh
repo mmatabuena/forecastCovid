@@ -17,7 +17,7 @@ do
         echo "  -> Se ha ignorado <$varRegion>, no está disponible el archivo <$FILE_PARAM>.."
     else
         echo "  -> Lanzando Scripts de C++ y R en <$varRegion>..."
-        ./runsimular_paral 53 0 500 ${FILE_PARAM[c]} $varRegion > ./Results/log_$varRegion.txt 
+        ./runsimular_paral 52 0 500 ${FILE_PARAM[c]} $varRegion > ./Results/log_$varRegion.txt 
         #R -e rmarkdown::render("../Rmds/res_$varRegion.Rmd",output_file="../Rmds/$varRegion/main.html")
 
     fi
