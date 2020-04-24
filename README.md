@@ -1,4 +1,4 @@
-# [forecastCovid](https://mmatabuena.github.io/forecastCovid/.)
+# :point_right: [www.forecastCovid](https://mmatabuena.github.io/forecastCovid/.)
 
 ## Select your Language 
 
