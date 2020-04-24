@@ -11,6 +11,13 @@ h1 {
 	text-align: center;
 }
 
+body {
+    margin-left: 60px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 #container {
     margin: 0 auto;
     width: 50%;  /* Ancho del contenedor */
