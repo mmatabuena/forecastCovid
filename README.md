@@ -1,4 +1,4 @@
-# [https://mmatabuena.github.io/forecastCovid/.](https://mmatabuena.github.io/forecastCovid/.)
+# [forecastCovid](https://mmatabuena.github.io/forecastCovid/.)
 
 ## Select your Language 
 
