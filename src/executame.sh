@@ -17,7 +17,7 @@ do
         echo "  -> Se ha ignorado <$varRegion>, no está disponible el archivo <$FILE_PARAM>.."
     else
         echo "  -> Lanzando Scripts de C++ y R en <$varRegion>..."
-        ./runsimular_paral 30 0 1000 ${FILE_PARAM[c]} $varRegion > ./Results/Ejemplo_$varRegion.txt 
+        ./runsimular_paral 53 0 500 ${FILE_PARAM[c]} $varRegion > ./Results/Ejemplo_$varRegion.txt 
         #R -e rmarkdown::render("../Rmds/res_$varRegion.Rmd",output_file="../Rmds/$varRegion/main.html")
 
     fi
@@ -30,7 +30,7 @@ done
 
 # Se ejecutan los scripts de R que generan las gráficas
 #R -e "rmarkdown::render('../Rmds/res_vasco.Rmd',output_file='../Rmds/vasco/main.html')"
-R -e "rmarkdown::render('../Rmds/res_madrid.Rmd',output_file='../Rmds/madrid/main.html')"
+#R -e "rmarkdown::render('../Rmds/res_madrid.Rmd',output_file='../Rmds/madrid/main.html')"
 #R -e "rmarkdown::render('../Rmds/res_cataluna.Rmd',output_file='../Rmds/cataluna/main.html')"
 #R -e "rmarkdown::render('../Rmds/res_leon.Rmd',output_file='../Rmds/leon/main.html')"
 R -e "rmarkdown::render('../Rmds/res_galicia.Rmd',output_file='../Rmds/galicia/main.html')"
