@@ -65,14 +65,15 @@ names(r2_raw)[-1]=format(datas,"%Y-%m-%d")
 names(mortos_raw)[-1]=format(datas,"%Y-%m-%d")
 
 
+names(reais)[length(names(reais))-nceros-1]
 
 #marxe=as.double(erro[2])
-morultimodia=as.double(erro[2])
+morultimodia=reaisi[length(names(reais))-nceros]
 distancias=(abs(mortos_raw[,ncol(mortos_raw)]-morultimodia))
 mortos_raw$dis=distancias
 ordenados=mortos_raw[order(mortos_raw$dis),]
 
-aceptados=ordenados[ordenados$dis<0.5*morultimodia,]
+aceptados=ordenados[ordenados$dis<0.1*morultimodia,]
 mortos=aceptados
 
 
