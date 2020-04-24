@@ -1,0 +1,38 @@
+Versión 0.2.0 2020/04/19 02:10
+(Simulador de Circuito Paralelizado con OpenMP)
+
+Empleando la función Tasa de transmisión R0: A*e^(-(B+C/10*x+D/100*x^2+E/1000*X^3+F/10000*X^4+G/100000*X^5)) 
+El archivo <../Data/Espana/Galicia/ParInit_Optimos_Exp7.txt> contiene los siguientes valores
+  -> 0 0 2 1 0.81 0.056 5.807 0.948 5.807 0.948 9 14 6.67 2.55 5 10 7 14 0.94598 0.9852 -1.76273 0.01066 0.24669 0.29277 0.0004 0 0 
+
+Los datos originales eran desde el día 2020-03-03 hasta el día 2020-04-16
+Datos ajustados para que contengan 18 ceros en lugar de 12 al inicio.
+El inicio de los datos se corresponde con 6 días antes de la fecha original.
+El archivo de <Galicia> contiene los siguientes valores
+  -> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 2 3 3 4 5 9 12 18 20 27 32 43 47 60 66 84 103 120 138 159 174 190 204 213 231 243 261 274 284 290 299 310 
+  -> Tamaño del histórico: 51 días
+  -> Población <Galicia>: 2699499
+
+El archivo <../Data/Espana/Galicia/ParInit_Optimos_Exp7.txt> contiene los siguientes valores
+  -> Inicialmente hay 2 contagiados que en 1 días presentarán síntomas (I1->I3).
+            	# 	#1	#2	#3	#4	#5	#6
+  -> alfas: 	0.81	5.8070	5.8070	9.0000	6.6700	5.0000	7.0000
+  -> betas: 	0.06	0.9480	0.9480	14.0000	2.5500	10.0000	14.0000
+    ----------------------------------------------------------------------------------
+   exp f/c  	         1           2           3
+  ->   1    	+9.460e-01  -1.763e+00  -1.763e+00
+  ->   2    	+1.066e-02  +2.467e-01  +2.928e-01
+  ->   3    	+4.000e-04  +0.000e+00  +0.000e+00
+
+(500) Simulaciones de 50 días empleando 2699499 personas ...
+
+Promedios estimados vs datos reales de muertes diarias (M) <Galicia>
+       -> 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 
+       -> 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 2.000e+00 2.000e+00 3.000e+00 3.000e+00 4.000e+00 5.000e+00 9.000e+00 1.200e+01 1.800e+01 2.000e+01 2.700e+01 3.200e+01 4.300e+01 4.700e+01 6.000e+01 6.600e+01 8.400e+01 1.030e+02 1.200e+02 1.380e+02 1.590e+02 1.740e+02 1.900e+02 2.040e+02 2.130e+02 2.310e+02 2.430e+02 2.610e+02 2.740e+02 2.840e+02 2.900e+02 2.990e+02 
+Función tasa de contagio (R0): 
+       -> 4.211e-01 5.010e-01 5.934e-01 6.972e-01 8.096e-01 9.248e-01 1.034e+00 1.123e+00 1.179e+00 1.187e+00 1.136e+00 1.025e+00 8.634e-01 6.719e-01 4.779e-01 3.070e-01 1.759e-01 8.874e-02 3.888e-02 1.457e-02 4.604e-03 1.207e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 
+Suma muertes reales: 
+  -> 2.990e+02 (err: 2.200e+02)
+
+Tiempo de cómputo: 2.233e+00
+

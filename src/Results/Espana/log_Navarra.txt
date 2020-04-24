@@ -1,0 +1,38 @@
+Versión 0.2.0 2020/04/19 02:10
+(Simulador de Circuito Paralelizado con OpenMP)
+
+Empleando la función Tasa de transmisión R0: A*e^(-(B+C/10*x+D/100*x^2+E/1000*X^3+F/10000*X^4+G/100000*X^5)) 
+El archivo <../Data/Espana/Navarra/ParInit_Optimos_Exp7.txt> contiene los siguientes valores
+  -> 0 0 2 1 0.81 0.056 5.807 0.948 5.807 0.948 9 14 6.67 2.55 5 10 7 14 0.230811 -3.29352 2.77511 0.017252 0.00157234 0.0568027 0.00396302 0 0 
+
+Los datos originales eran desde el día 2020-03-03 hasta el día 2020-04-16
+Datos ajustados para que contengan 18 ceros en lugar de 13 al inicio.
+El inicio de los datos se corresponde con 5 días antes de la fecha original.
+El archivo de <Navarra> contiene los siguientes valores
+  -> 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 2 3 4 5 9 14 24 31 33 49 58 70 84 102 113 130 141 151 171 178 187 202 206 214 218 227 232 239 249 252 261 
+  -> Tamaño del histórico: 50 días
+  -> Población <Navarra>: 654214
+
+El archivo <../Data/Espana/Navarra/ParInit_Optimos_Exp7.txt> contiene los siguientes valores
+  -> Inicialmente hay 2 contagiados que en 1 días presentarán síntomas (I1->I3).
+            	# 	#1	#2	#3	#4	#5	#6
+  -> alfas: 	0.81	5.8070	5.8070	9.0000	6.6700	5.0000	7.0000
+  -> betas: 	0.06	0.9480	0.9480	14.0000	2.5500	10.0000	14.0000
+    ----------------------------------------------------------------------------------
+   exp f/c  	         1           2           3
+  ->   1    	+2.308e-01  +2.775e+00  +2.775e+00
+  ->   2    	+1.725e-02  +1.572e-03  +5.680e-02
+  ->   3    	+3.963e-03  +0.000e+00  +0.000e+00
+
+(500) Simulaciones de 49 días empleando 654214 personas ...
+
+Promedios estimados vs datos reales de muertes diarias (M) <Navarra>
+       -> 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 
+       -> 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 0.000e+00 1.000e+00 2.000e+00 3.000e+00 4.000e+00 5.000e+00 9.000e+00 1.400e+01 2.400e+01 3.100e+01 3.300e+01 4.900e+01 5.800e+01 7.000e+01 8.400e+01 1.020e+02 1.130e+02 1.300e+02 1.410e+02 1.510e+02 1.710e+02 1.780e+02 1.870e+02 2.020e+02 2.060e+02 2.140e+02 2.180e+02 2.270e+02 2.320e+02 2.390e+02 2.490e+02 2.520e+02 
+Función tasa de contagio (R0): 
+       -> 4.710e+00 3.566e+00 2.699e+00 2.040e+00 1.540e+00 1.160e+00 8.707e-01 6.511e-01 4.843e-01 3.580e-01 2.624e-01 1.905e-01 1.367e-01 9.677e-02 6.740e-02 4.609e-02 3.085e-02 2.016e-02 1.282e-02 7.906e-03 4.712e-03 2.704e-03 1.488e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 1.000e-03 
+Suma muertes reales: 
+  -> 2.520e+02 (err: 1.610e+02)
+
+Tiempo de cómputo: 3.786e+00
+
