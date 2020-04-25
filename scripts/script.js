@@ -11,6 +11,11 @@ function getLanguage() {
 
 function setLanguage(lang) {
   localStorage.setItem('language', lang);
+  updateTexts();
+  location.reload();
+}
+
+function updateTexts(){
   $('#div01').text(language.Cabecera01);
   $('#div02').text(language.Cabecera02);
   $('#div03').text(language.Cabecera03);	
@@ -18,5 +23,5 @@ function setLanguage(lang) {
 
 $(document).ready(function(){
   getLanguage();
-  setLanguage(language);
+  updateTexts();
 });
