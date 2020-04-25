@@ -19,21 +19,21 @@ library("ggplot2")
 # datosfda= fdata(trayectorias)
 # plot(datosfda)
 
-#setwd("~/Modelo_Covid_descargado/Results/Vasco/")
+#setwd("~/Modelo_Covid_descargado/Results/Cataluna/")
 
 ##############################
 ##### CAMBIAR DENDE AQUÍ #####
 ##############################
 
-i=16 #indice da autonomia
+i=15 #indice da autonomia
 
-i1_raw= read.table("../../src/Results/Espana/Vasco/SimulaVasco_I1.txt")
-i2_raw= read.table("../../src/Results/Espana/Vasco/SimulaVasco_I2.txt")
-i3_raw= read.table("../../src/Results/Espana/Vasco/SimulaVasco_I3.txt")
-r1_raw= read.table("../../src/Results/Espana/Vasco/SimulaVasco_R1.txt")
-r2_raw= read.table("../../src/Results/Espana/Vasco/SimulaVasco_R2.txt")
-mortos_raw=read.table("../../src/Results/Espana/Vasco/SimulaVasco_XM.txt")
-erro=read.table("../../src/Results/Espana/Vasco/SimulaVasco_Error.txt")
+i1_raw= read.table("../../src/Results/Espana/Navarra/SimulaNavarra_I1.txt")
+i2_raw= read.table("../../src/Results/Espana/Navarra/SimulaNavarra_I2.txt")
+i3_raw= read.table("../../src/Results/Espana/Navarra/SimulaNavarra_I3.txt")
+r1_raw= read.table("../../src/Results/Espana/Navarra/SimulaNavarra_R1.txt")
+r2_raw= read.table("../../src/Results/Espana/Navarra/SimulaNavarra_R2.txt")
+mortos_raw=read.table("../../src/Results/Espana/Navarra/SimulaNavarra_XM.txt")
+erro=read.table("../../src/Results/Espana/Navarra/SimulaNavarra_Error.txt")
 
 autonomias=read.csv("../../Data/Espana_Autonomias.csv",header=TRUE,sep='\t')
 

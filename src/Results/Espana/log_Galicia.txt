@@ -34,5 +34,5 @@ Función tasa de contagio (R0):
 Suma muertes reales: 
   -> 2.990e+02 (err: 2.200e+02)
 
-Tiempo de cómputo: 2.233e+00
+Tiempo de cómputo: 1.180e+00
 

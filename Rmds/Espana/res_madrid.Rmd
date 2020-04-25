@@ -27,17 +27,18 @@ library("ggplot2")
 
 i=13 #indice da autonomia
 
-i1_raw= read.table("../src/Results/Madrid/SimulaMadrid_I1.txt")
-i2_raw= read.table("../src/Results/Madrid/SimulaMadrid_I2.txt")
-i3_raw= read.table("../src/Results/Madrid/SimulaMadrid_I3.txt")
-r1_raw= read.table("../src/Results/Madrid/SimulaMadrid_R1.txt")
-r2_raw= read.table("../src/Results/Madrid/SimulaMadrid_R2.txt")
-mortos_raw=read.table("../src/Results/Madrid/SimulaMadrid_XM.txt")
-erro=read.table("../src/Results/Madrid/SimulaMadrid_Error.txt")
+i1_raw= read.table("../../src/Results/Espana/Madrid/SimulaMadrid_I1.txt")
+i2_raw= read.table("../../src/Results/Espana/Madrid/SimulaMadrid_I2.txt")
+i3_raw= read.table("../../src/Results/Espana/Madrid/SimulaMadrid_I3.txt")
+r1_raw= read.table("../../src/Results/Espana/Madrid/SimulaMadrid_R1.txt")
+r2_raw= read.table("../../src/Results/Espana/Madrid/SimulaMadrid_R2.txt")
+mortos_raw=read.table("../../src/Results/Espana/Madrid/SimulaMadrid_XM.txt")
+erro=read.table("../../src/Results/Espana/Madrid/SimulaMadrid_Error.txt")
 
-autonomias=read.csv("../Data/Autonomias.csv",header=TRUE,sep='\t')
+autonomias=read.csv("../../Data/Espana_Autonomias.csv",header=TRUE,sep='\t')
 
-reais=read.csv("../Data/ccaa_covid19_fallecidos.csv",header=TRUE,sep=',')
+reais=read.csv("../../Data/Espana_ccaa_covid19_fallecidos.csv",header=TRUE,sep=',')
+
 ####################
 ##### ATA AQUI #####
 ####################
@@ -65,30 +66,31 @@ names(r2_raw)[-1]=format(datas,"%Y-%m-%d")
 names(mortos_raw)[-1]=format(datas,"%Y-%m-%d")
 
 
-names(reais)[length(names(reais))-nceros-1]
 
-#marxe=as.double(erro[2])
-morultimodia=reaisi[length(names(reais))-nceros]
+morultimodia=as.double(erro[1])
 distancias=(abs(mortos_raw[,ncol(mortos_raw)]-morultimodia))
-mortos_raw$dis=distancias
-ordenados=mortos_raw[order(mortos_raw$dis),]
 
-aceptados=ordenados[ordenados$dis<0.1*morultimodia,]
+ordenados=mortos_raw[order(distancias),]
+ordenados$dis=sort(distancias)
+aceptados=ordenados[ordenados$dis<morultimodia*0.1,]
 mortos=aceptados
+caben=reaisi[3:(ncol(mortos_raw)-r+1)]
+moreais=c(-1,rep(0,ncol(aceptados)-length(caben)-2),caben,-1)
+mortosconreais=rbind(aceptados,moreais)
 
 
 
-
-mord=gather(mortos,key="dia",value="cantos",-V1,-dis)
+mord=gather(mortosconreais,key="dia",value="cantos",-V1,-dis)
 
 mord$dia=as.Date(mord$dia)
 
 ggplot(mord) +
-  geom_line(aes(dia, 100*cantos/autonomias$Población[i],group= V1,alpha=1/((1+dis)^100)),colour='#00C08D',show.legend=FALSE) +
+  geom_line(aes(dia, 100*cantos/autonomias$Población[i],group= V1,alpha=exp(-dis^2)),colour='#00C08D',show.legend=FALSE) +
+  geom_point(data=mord[mord$dis==-1,],aes(dia, 100*cantos/autonomias$Población[i]),colour='black') +
   scale_x_date() +
   theme_bw() +
   labs(x = "Date", y = "", 
-       subtitle = paste("% of dead in ", autonomias$Comunidad[i]))
+       subtitle = paste("Fatality rate in ", autonomias$Comunidad[i]))
 
  
 i1=i1_raw[aceptados$V1,]
@@ -155,17 +157,3 @@ ggplot(r2ord) +
   theme_bw() +
   labs(x = "Date", y = "", 
        subtitle = paste("% of R2 in ", autonomias$Comunidad[i]))
-```
-```{r}
-totalcovid=gather(r1+r2+i1+i1+i3,key="dia",value="cantos",-V1,-dis)
-totalcovid$dia=as.Date(totalcovid$dia)
-
-ggplot(totalcovid) +
-  geom_line(aes(dia, 100*cantos/autonomias$Población[i],group= V1,alpha=1/((1+dis)^2)),colour='#00C08D',show.legend=FALSE) +
-  scale_x_date() +
-  theme_bw() +
-  labs(x = "Date", y = "", 
-       subtitle = paste("% of total people affected by COVID-19 in ", autonomias$Comunidad[i]))
-```
-
-
