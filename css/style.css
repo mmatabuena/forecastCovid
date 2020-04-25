@@ -7,7 +7,10 @@
 }
 
 ul {
-    margin-left: 30px;
+  margin-left: 30px;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;	
 }
 
 .isDisabled {
