@@ -11,10 +11,11 @@ function getLanguage() {
 
 function setLanguage(lang) {
   localStorage.setItem('language', lang);
+  $('#div01').text(language.Cabecera01);
+  $('#div02').text(language.Cabecera02);
+  $('#div03').text(language.Cabecera03);	
 }
 
 $(document).ready(function(){
   getLanguage();
-  console.log('./scripts/' +  localStorage.getItem('language') + '.json');
-  $('#div01').text(language.date);
 });
