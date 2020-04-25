@@ -1,5 +1,8 @@
 { 
     "date": "Fecha", 
     "save": "Salvar",
-    "cancel": "Cancelar" 
+    "cancel": "Cancelar"
+    "Cabecera01": "España - Información das comunidades autónomas"
+    "Cabecera02": "Italia - Información por regiones"   
+    "Cabecera03": "Otros paises del mundo - Grandes ciudades" 
 }
