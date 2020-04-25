@@ -8,9 +8,9 @@
 
 ul {
   margin-left: 30px;
-  columns: 2;
-  -webkit-columns: 2;
-  -moz-columns: 2;	
+  columns: 5;
+  -webkit-columns: 5;
+  -moz-columns: 5;	
 }
 
 .isDisabled {
