@@ -1,5 +1,8 @@
 { 
     "date": "Date", 
     "save": "Save",
-    "cancel": "Cancel" 
+    "cancel": "Cancel"
+    "Cabecera01": "Spain - Infomation by local regions"
+    "Cabecera02": "Italy - Infomation by local regions"   
+    "Cabecera03": "Other countries - big Cities"     
 }
