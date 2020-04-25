@@ -6,7 +6,6 @@ function getLanguage() {
   url:  './scripts/' +  localStorage.getItem('language') + '.json', 
   dataType: 'json', async: false, dataType: 'json', 
   success: function (lang) { language = lang } });
-
 }
 
 function setLanguage(lang) {
@@ -22,8 +21,6 @@ function updateTexts(){
 }
 
 $(document).ready(function(){
-  var pre_Lang = language;
   getLanguage();
   updateTexts();
- if (pre_Lang == null) {location.reload();}
 });
