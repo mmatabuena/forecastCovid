@@ -13,6 +13,7 @@ ul {
   -webkit-columns: 5;
   -moz-columns: 5;
   width: max-content;
+  box-shadow: 8px 11px 10px 0px black;
 }
 
 .isDisabled {
@@ -23,8 +24,12 @@ ul {
 }
 
 h1 {
-	margin: 1em 0;
-	text-align: center;
+   margin: 1em 0;
+   text-align: center;
+}
+
+h2 {
+   padding-top: 20px;	
 }
 
 body {
