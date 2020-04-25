@@ -13,7 +13,7 @@ ul {
   -webkit-columns: 5;
   -moz-columns: 5;
   width: max-content;
-  box-shadow: 8px 11px 10px 0px black;
+  /* box-shadow: 8px 11px 10px 0px black; */
 }
 
 .isDisabled {
