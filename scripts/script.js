@@ -22,6 +22,8 @@ function updateTexts(){
 }
 
 $(document).ready(function(){
+  var pre_Lang = language;
   getLanguage();
   updateTexts();
+ if (pre_Lang == null) {location.reload();}
 });
