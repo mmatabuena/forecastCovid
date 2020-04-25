@@ -18,4 +18,5 @@ function setLanguage(lang) {
 
 $(document).ready(function(){
   getLanguage();
+  setLanguage(language);
 });
