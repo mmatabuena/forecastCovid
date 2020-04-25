@@ -18,7 +18,7 @@ do
     else
         echo "  -> Lanzando Scripts de C++ y R en <$varRegion>..."
         ./runsimular_paral -1 0 500 ${FILE_PARAM[c]} $varRegion > ./Results/Espana/log_$varRegion.txt 
-        R -e "rmarkdown::render('../Rmds/Espana/res_$varRegion.Rmd',output_file='../Rmds/Espana/$varRegion/main.html')"
+        R -e "rmarkdown::render('../Rmds/Espana/res_$varRegion.Rmd',output_file='$varRegion/main.html')"
 
     fi
     c=$(($c+1));
