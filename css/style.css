@@ -8,6 +8,7 @@
 
 ul {
   margin-left: 30px;
+  margin-right: 30px;	
   columns: 5;
   -webkit-columns: 5;
   -moz-columns: 5;	
