@@ -17,7 +17,9 @@ function setLanguage(lang) {
 function updateTexts(){
   $('#div01').text(language.Cabecera01);
   $('#div02').text(language.Cabecera02);
-  $('#div03').text(language.Cabecera03);	
+  $('#div03').text(language.Cabecera03);
+  $('#div04').text(language.Pie01);
+  $('#div05').text(language.Pie02);	
 }
 
 $(document).ready(function(){
