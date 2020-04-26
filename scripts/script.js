@@ -1,5 +1,7 @@
 var language;
 var selRegion;
+var selRegionLongName;
+
 function getLanguage() {
  // console.log(localStorage.getItem('language'));
  (localStorage.getItem('language') == null) ? setLanguage('es') : false;
@@ -16,11 +18,12 @@ function setLanguage(lang) {
 }
 
 function getRegion() {
-  (localStorage.getItem('selRegion') == null) ? setRegion('Galicia') : false;
+  (localStorage.getItem('selRegion') == null) ? setRegion('Galicia','Galicia') : false;
 }
 
-function setRegion(reg) {
+function setRegion(reg,regLN) {
   localStorage.setItem('selRegion', reg);
+  localStorage.setItem('selRegionLongName', regLN);  
   updateTexts();  
   //location.reload();
 }
@@ -31,12 +34,12 @@ function updateTexts(){
   $('#div03').text(language.Cabecera03);
   $('#div04').text(language.Pie01);
   $('#div05').text(language.Pie02);	
-  $('#div06').text(language.Cabecera04 + ' <' + localStorage.getItem('selRegion') + '>');
+  $('#div06').text(language.Cabecera04 + ' <' + localStorage.getItem('selRegionLongName') + '>');
 }
 
 $(document).ready(function(){
   getLanguage();
   getRegion();
   updateTexts();
-  console.log("Lang: <" + localStorage.getItem('language') + ">, Reg: <" + localStorage.getItem('selRegion') + ">");
+  console.log("Lang: <" + localStorage.getItem('language') + ">, Reg: <" + localStorage.getItem('selRegionLongName') + ">");
 });
