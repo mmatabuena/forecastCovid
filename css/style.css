@@ -1,9 +1,13 @@
 * {
 	font-family: Arial, sans;
-	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
+}
+
+image.langIcon {
+  margin-right: 10px;	
+  margin-left: 10px;
 }
 
 ul {
@@ -25,7 +29,7 @@ ul {
 
 h1 {
    margin: 1em 0;
-   text-align: center;
+   text-align: left;
 }
 
 h2 {
