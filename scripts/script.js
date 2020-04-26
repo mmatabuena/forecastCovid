@@ -1,6 +1,7 @@
-var language; 
+var language;
+var selRegion;
 function getLanguage() {
-	  console.log(localStorage.getItem('language'));
+ // console.log(localStorage.getItem('language'));
  (localStorage.getItem('language') == null) ? setLanguage('es') : false;
   $.ajax({ 
   url:  './scripts/' +  localStorage.getItem('language') + '.json', 
@@ -14,6 +15,10 @@ function setLanguage(lang) {
   location.reload();
 }
 
+function setRegion(reg) {
+  localStorage.setItem('selRegion', reg);
+}
+
 function updateTexts(){
   $('#div01').text(language.Cabecera01);
   $('#div02').text(language.Cabecera02);
@@ -25,5 +30,6 @@ function updateTexts(){
 
 $(document).ready(function(){
   getLanguage();
+  setRegion('Galicia');
   updateTexts();
 });
