@@ -44,6 +44,7 @@ function updateImages(){
   $('#Imagen_R1').prop('src','./Rmds/Espana/' + localStorage.getItem('selRegion') + '/Image_R1.png');
   $('#Imagen_R2').prop('src','./Rmds/Espana/' + localStorage.getItem('selRegion') + '/Image_R2.png');
   $('#Imagen_M').prop('src','./Rmds/Espana/' + localStorage.getItem('selRegion') + '/Image_M.png'); 
+  $('#Link_InfoExt').prop('href','./Rmds/Espana/' + localStorage.getItem('selRegion') + '/main.html');
 }
 
 $(document).ready(function(){
