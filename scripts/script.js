@@ -25,6 +25,7 @@ function setRegion(reg,regLN) {
   localStorage.setItem('selRegion', reg);
   localStorage.setItem('selRegionLongName', regLN);  
   updateTexts();
+  updateImages();
 }
 
 function updateTexts(){
@@ -34,16 +35,15 @@ function updateTexts(){
   $('#div04').text(language.Pie01);
   $('#div05').text(language.Pie02);	
   $('#div06').text(language.Cabecera04 + ' <' + localStorage.getItem('selRegionLongName') + '>');
-  
 }
 
 function updateImages(){
-  $('#Imagen_I1').prop('src','./Rmds/Espana/Madrid/Image_I1.png');
-  $('#Imagen_I2').prop('src','./Rmds/Espana/Madrid/Image_I2.png');
-  $('#Imagen_I3').prop('src','./Rmds/Espana/Madrid/Image_I1.png');
-  $('#Imagen_R1').prop('src','./Rmds/Espana/Madrid/Image_R1.png');
-  $('#Imagen_R2').prop('src','./Rmds/Espana/Madrid/Image_R2.png');
-  $('#Imagen_M').prop('src','./Rmds/Espana/Madrid/Image_M.png'); 
+  $('#Imagen_I1').prop('src','./Rmds/Espana/' + localStorage.getItem('selRegion') + '/Image_I1.png');
+  $('#Imagen_I2').prop('src','./Rmds/Espana/' + localStorage.getItem('selRegion') + '/Image_I2.png');
+  $('#Imagen_I3').prop('src','./Rmds/Espana/' + localStorage.getItem('selRegion') + '/Image_I1.png');
+  $('#Imagen_R1').prop('src','./Rmds/Espana/' + localStorage.getItem('selRegion') + '/Image_R1.png');
+  $('#Imagen_R2').prop('src','./Rmds/Espana/' + localStorage.getItem('selRegion') + '/Image_R2.png');
+  $('#Imagen_M').prop('src','./Rmds/Espana/' + localStorage.getItem('selRegion') + '/Image_M.png'); 
 }
 
 $(document).ready(function(){
