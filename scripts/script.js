@@ -38,4 +38,5 @@ $(document).ready(function(){
   getLanguage();
   getRegion();
   updateTexts();
+  console.log("Lang: <" + localStorage.getItem('language') + ">, Reg: <" + localStorage.getItem('selRegion') + ">");
 });
