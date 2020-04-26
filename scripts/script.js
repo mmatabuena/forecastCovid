@@ -24,8 +24,7 @@ function getRegion() {
 function setRegion(reg,regLN) {
   localStorage.setItem('selRegion', reg);
   localStorage.setItem('selRegionLongName', regLN);  
-  updateTexts();  
-  //location.reload();
+  updateTexts();
 }
 
 function updateTexts(){
@@ -35,6 +34,11 @@ function updateTexts(){
   $('#div04').text(language.Pie01);
   $('#div05').text(language.Pie02);	
   $('#div06').text(language.Cabecera04 + ' <' + localStorage.getItem('selRegionLongName') + '>');
+  
+}
+
+function updateImages(){
+  $('#Imagen_I1').value('./Rmds/Espana/Madrid/Image_I1.png');
 }
 
 $(document).ready(function(){
