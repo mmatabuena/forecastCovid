@@ -5,7 +5,8 @@
 	-moz-box-sizing: border-box;
 }
 
-image.langIcon {
+.langIcon {
+  margin-top: 8px;
   margin-right: 3px;	
   margin-left: 3px;
 }
@@ -28,7 +29,8 @@ ul {
 
 h1 {
    margin: 1em 0;
-   text-align: left;
+   margin-top: 8px;
+   margin-bottom: 8px;   
 }
 
 h2 {
