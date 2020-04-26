@@ -1,8 +1,8 @@
 { 
-    "Cabecera01": "Spain - Infomation by local regions",
-    "Cabecera02": "Italy - Infomation by local regions",  
-    "Cabecera03": "Other countries - big Cities",
+    "Cabecera01": "Spain - Infomation by regions",
+    "Cabecera02": "Italy - Infomation by regions",  
+    "Cabecera03": "Other countries - big cities",
     "Cabecera04": "Selected country",
-    "Pie01": "If you see this page inside a mobile phone use the horizontal mode",
-    "Pie02": "To open all the conthent via github click"
+    "Pie01": "If you are opening this page from a mobile phone browser please use horizontal mode",
+    "Pie02": "To open all the content via GitHub click"
 }
