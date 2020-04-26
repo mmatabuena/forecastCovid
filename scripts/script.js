@@ -31,7 +31,7 @@ function updateTexts(){
   $('#div03').text(language.Cabecera03);
   $('#div04').text(language.Pie01);
   $('#div05').text(language.Pie02);	
-  $('#div06').text(language.Cabecera04 + ' <' + selRegion + '>');
+  $('#div06').text(language.Cabecera04 + ' <' + localStorage.getItem('selRegion') + '>');
 }
 
 $(document).ready(function(){
