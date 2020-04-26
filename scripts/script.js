@@ -38,7 +38,7 @@ function updateTexts(){
 }
 
 function updateImages(){
-  $('#Imagen_I1').text('./Rmds/Espana/Madrid/Image_I1.png');
+  $('#Imagen_I1').src('./Rmds/Espana/Madrid/Image_I1.png');
 }
 
 $(document).ready(function(){
