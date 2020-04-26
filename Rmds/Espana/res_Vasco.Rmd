@@ -85,39 +85,48 @@ mord=gather(mortosconreais,key="dia",value="cantos",-V1,-dis)
 
 mord$dia=as.Date(mord$dia)
 
-ggplot(mord) +
+p1=ggplot(mord) +
   geom_line(aes(dia, 100*cantos/autonomias$Población[i],group= V1,alpha=exp(-dis^2/(2*var(dis)))),colour='#00C08D',show.legend=FALSE) +
   geom_point(data=mord[mord$dis==-1,],aes(dia, 100*cantos/autonomias$Población[i]),colour='black') +
   scale_x_date() +
   theme_bw() +
   labs(x = "Date", y = "", 
        subtitle = paste("Fatality rate in ", autonomias$Comunidad[i]))
- 
+p1
+
 i1=i1_raw[aceptados$V1,]
 i1$dis=aceptados$dis
+
+
+library("fda.usc")
+trayectorias= i1[,-c(1,ncol(i1))]
+datosfda= fdata(trayectorias)
+plot(datosfda)
+ 
 
 i1ord=gather(i1,key="dia",value="cantos",-V1,-dis)
 i1ord$dia=as.Date(i1ord$dia)
 
-ggplot(i1ord) +
+p2=ggplot(i1ord) +
   geom_line(aes(dia, 100*cantos/autonomias$Población[i],group= V1,alpha=1/((1+dis)^100)),colour='#00C08D',show.legend=FALSE) +
   scale_x_date() +
   theme_bw() +
   labs(x = "Date", y = "", 
        subtitle = paste("% of I1 in ", autonomias$Comunidad[i]))
-
+p2
 i2=i2_raw[aceptados$V1,]
 i2$dis=aceptados$dis
 
 i2ord=gather(i2,key="dia",value="cantos",-V1,-dis)
 i2ord$dia=as.Date(i1ord$dia)
 
-ggplot(i2ord) +
+p3=ggplot(i2ord) +
   geom_line(aes(dia, 100*cantos/autonomias$Población[i],group= V1,alpha=1/((1+dis)^100)),colour='#00C08D',show.legend=FALSE) +
   scale_x_date() +
   theme_bw() +
   labs(x = "Date", y = "", 
        subtitle = paste("% of I2 in ", autonomias$Comunidad[i]))
+p3
 
 i3=i3_raw[aceptados$V1,]
 i3$dis=aceptados$dis
@@ -125,12 +134,13 @@ i3$dis=aceptados$dis
 i3ord=gather(i3,key="dia",value="cantos",-V1,-dis)
 i3ord$dia=as.Date(i1ord$dia)
 
-ggplot(i3ord) +
+p4=ggplot(i3ord) +
   geom_line(aes(dia, 100*cantos/autonomias$Población[i],group= V1,alpha=1/((1+dis)^100)),colour='#00C08D',show.legend=FALSE) +
   scale_x_date() +
   theme_bw() +
   labs(x = "Date", y = "", 
        subtitle = paste("% of I3 in ", autonomias$Comunidad[i]))
+p4
 
 r1=r1_raw[aceptados$V1,]
 r1$dis=aceptados$dis
@@ -138,12 +148,13 @@ r1$dis=aceptados$dis
 r1ord=gather(r1,key="dia",value="cantos",-V1,-dis)
 r1ord$dia=as.Date(r1ord$dia)
 
-ggplot(r1ord) +
+p5=ggplot(r1ord) +
   geom_line(aes(dia, 100*cantos/autonomias$Población[i],group= V1,alpha=1/((1+dis)^100)),colour='#00C08D',show.legend=FALSE) +
   scale_x_date() +
   theme_bw() +
   labs(x = "Date", y = "", 
        subtitle = paste("% of R1 in ", autonomias$Comunidad[i]))
+p5
 
 r2=r2_raw[aceptados$V1,]
 r2$dis=aceptados$dis
@@ -151,9 +162,34 @@ r2$dis=aceptados$dis
 r2ord=gather(r2,key="dia",value="cantos",-V1,-dis)
 r2ord$dia=as.Date(r2ord$dia)
 
-ggplot(r2ord) +
+p6=ggplot(r2ord) +
   geom_line(aes(dia, 100*cantos/autonomias$Población[i],group= V1,alpha=1/((1+dis)^100)),colour='#00C08D',show.legend=FALSE) +
   scale_x_date() +
   theme_bw() +
   labs(x = "Date", y = "", 
        subtitle = paste("% of R2 in ", autonomias$Comunidad[i]))
+p6
+
+png("Vasco/Image_M.png",width=960,height=540)
+p1
+dev.off()
+
+png("Vasco/Image_I1.png",width=960,height=540)
+p2
+dev.off()
+
+png("Vasco/Image_I2.png",width=960,height=540)
+p3
+dev.off()
+
+png("Vasco/Image_I3.png",width=960,height=540)
+p4
+dev.off()
+
+png("Vasco/Image_R1.png",width=960,height=540)
+p5
+dev.off()
+
+png("Vasco/Image_R2.png",width=960,height=540)
+p6
+dev.off()
