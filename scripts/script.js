@@ -22,10 +22,8 @@ function getRegion(reg) {
 function setRegion(reg) {
   localStorage.setItem('selRegion', reg);
   updateTexts();  
-  location.reload();
+  //location.reload();
 }
-
-
 
 function updateTexts(){
   $('#div01').text(language.Cabecera01);
@@ -38,6 +36,6 @@ function updateTexts(){
 
 $(document).ready(function(){
   getLanguage();
-  getRegion(reg);
+  getRegion();
   updateTexts();
 });
