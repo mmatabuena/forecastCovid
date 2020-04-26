@@ -38,7 +38,12 @@ function updateTexts(){
 }
 
 function updateImages(){
-  $('#Imagen_I1').src('./Rmds/Espana/Madrid/Image_I1.png');
+  $('#Imagen_I1').prop('src','./Rmds/Espana/Madrid/Image_I1.png');
+  $('#Imagen_I2').prop('src','./Rmds/Espana/Madrid/Image_I2.png');
+  $('#Imagen_I3').prop('src','./Rmds/Espana/Madrid/Image_I1.png');
+  $('#Imagen_R1').prop('src','./Rmds/Espana/Madrid/Image_R1.png');
+  $('#Imagen_R2').prop('src','./Rmds/Espana/Madrid/Image_R2.png');
+  $('#Imagen_M').prop('src','./Rmds/Espana/Madrid/Image_M.png'); 
 }
 
 $(document).ready(function(){
