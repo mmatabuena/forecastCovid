@@ -21,6 +21,7 @@ function getRegion(reg) {
 
 function setRegion(reg) {
   localStorage.setItem('selRegion', reg);
+  updateTexts();  
   location.reload();
 }
 
