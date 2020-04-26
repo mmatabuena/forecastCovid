@@ -45,5 +45,6 @@ $(document).ready(function(){
   getLanguage();
   getRegion();
   updateTexts();
+  updateImages();
   console.log("Lang: <" + localStorage.getItem('language') + ">, Reg: <" + localStorage.getItem('selRegionLongName') + ">");
 });
