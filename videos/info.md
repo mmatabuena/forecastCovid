@@ -1,3 +1,3 @@
-El siguiente video es una representación del funcionamiento del algoritmo CMAES durante la exploraciondel mapa de funciones de tasa 
-de contagio R0(t) para un caso simple de una áproximación de la función R0(t) mediante dos parámetros, o sea ajustandola a una
-recta de pendiente B y offset A.
+Los vídeos de esta carpeta son representaciones 3D del funcionamiento del algoritmo de minimización CMAES durante la fase de búsqueda inversa de soluciones para la función tasa de contagio R0. En este caso para poder representar los datos se ha supuesto una función R0(t) para un caso simple de una áproximación mediante dos parámetros, o sea ajustandola a una recta de pendiente B y ordenada A.
+
+En función de la estrategia elegida las trayectorias de búsqueda son diferentes. La forma del mapa tridimensional se asemeja a una region montañosa en la que la solución que buscamos se corresponde con el pozo subterráneo más profundo que permita la función que aquí se representa. En este caso se observan todo un rio de soluciones discurriendo a lo largo del valle que se forma en la ladera de las montañas.
