@@ -7,8 +7,13 @@ Visualization of data provided by the Government:  [www.forecastCovid](https://m
 * :chart_with_upwards_trend: __[Cataluña](https://mmatabuena.github.io/forecastCovid/Rmds/cat/index.html)__
 * :chart_with_upwards_trend: __[País Vasco](https://mmatabuena.github.io/forecastCovid/Rmds/pv/index.html)__
 
+All the methodology shown in this web is described in te arXiv [publication](https://arxiv.org/abs/2004.13695) "Estimating spread in Spain solving an inverse problem with a probabilistic model".
+
 <img src="./images/image_2020_04_19T13_34_22_302Z.jpg" align="left" hspace="20" vspace="10" width="150px">
 
 ### Support and contact
 
 Problems with this pages? Check [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we will help you to solve it. 
+
+### Disclaimer
+This tool uses a mathematical model to simulate a variety of COVID-19 outcomes. This output of the model depends on model assumptions and parameter choices. It is not a medical predictor, and should be used for informational and research purposes only. Interpret and use the simulated results responsibly. Authors are not liable for any direct or indirect consequences of this usage.
