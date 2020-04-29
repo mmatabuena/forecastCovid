@@ -7,8 +7,13 @@ Web de resultados del modelo: [https://mmatabuena.github.io/forecastCovid/.](htt
 * __[Cataluña](https://mmatabuena.github.io/forecastCovid/Rmds/cat/index.html)__
 * __[País Vasco](https://mmatabuena.github.io/forecastCovid/Rmds/pv/index.html)__
 
+Toda la metodología empleada para construir las gráficas de esta web está descrita en la publicación de [arXiv](https://arxiv.org/abs/2004.13695) "Estimating spread in Spain solving an inverse problem with a probabilistic model".
+
 <img src="./images/image_2020_04_19T13_34_22_302Z.jpg" align="left" hspace="20" vspace="10" width="150px">
 
 
 ### Soporte y Contacto
 Tienes problemas con esta página? Revisa la [documentación](https://help.github.com/categories/github-pages-basics/) o [contacta con el soporte](https://github.com/contact) e intentaremos resolverlo.
+
+### Descargo de responsabilidad
+Esta herramiento matemática simula multiples escenarios para el COVID-19. La salida del modelo depende de loas suposiciones del mismo y de la elección correcta de los parámetros. No es un predictor médico, y debe ser empleado como medio informativo y de desarrollo solamente. Los autores no se responsabilizan de las consecuencias directas o indirectas de su uso.
