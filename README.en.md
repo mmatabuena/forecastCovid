@@ -7,7 +7,7 @@ Visualization of data provided by the Government:  [www.forecastCovid](https://m
 * :chart_with_upwards_trend: __[Cataluña](https://mmatabuena.github.io/forecastCovid/Rmds/cat/index.html)__
 * :chart_with_upwards_trend: __[País Vasco](https://mmatabuena.github.io/forecastCovid/Rmds/pv/index.html)__
 
-All the methodology shown in this web is described in te arXiv [publication](https://arxiv.org/abs/2004.13695) "Estimating spread in Spain solving an inverse problem with a probabilistic model".
+All the methodology shown in this web is described in the [arXiv publication](https://arxiv.org/abs/2004.13695) "Estimating spread in Spain solving an inverse problem with a probabilistic model".
 
 <img src="./images/image_2020_04_19T13_34_22_302Z.jpg" align="left" hspace="20" vspace="10" width="150px">
 
