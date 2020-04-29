@@ -2,10 +2,12 @@
 
 Web de resultados del modelo: [https://mmatabuena.github.io/forecastCovid/.](https://mmatabuena.github.io/forecastCovid/.)
 
-* __[Galicia](https://mmatabuena.github.io/forecastCovid/Rmds/gal/index.html)__
-* __[Castilla y León](https://mmatabuena.github.io/forecastCovid/Rmds/cl/index.html)__
-* __[Cataluña](https://mmatabuena.github.io/forecastCovid/Rmds/cat/index.html)__
-* __[País Vasco](https://mmatabuena.github.io/forecastCovid/Rmds/pv/index.html)__
+* :chart_with_upwards_trend: __[Galicia](https://mmatabuena.github.io/forecastCovid/Rmds/Espana/Galicia/main.html)__
+* :chart_with_upwards_trend: __[Navarra](https://mmatabuena.github.io/forecastCovid/Rmds/Espana/Navarra/main.html)__
+* :chart_with_upwards_trend: __[Madrid](https://mmatabuena.github.io/forecastCovid/Rmds/Espana/Madrid/main.html)__
+* :chart_with_upwards_trend: __[Castilla y León](https://mmatabuena.github.io/forecastCovid/Rmds/Espana/Leon/main.html)__
+* :chart_with_upwards_trend: __[País Vasco](https://mmatabuena.github.io/forecastCovid/Rmds/Espana/Vasco/main.html)__
+* :chart_with_upwards_trend: __[Cataluña](https://mmatabuena.github.io/forecastCovid/Rmds/Espana/Cataluna/main.html)__
 
 Toda la metodología empleada para construir las gráficas de esta web está descrita en la publicación de [arXiv](https://arxiv.org/abs/2004.13695) "Estimating spread in Spain solving an inverse problem with a probabilistic model".
 
