@@ -2,11 +2,12 @@
 
 Web con visualización de datos aportados polo Goberno: [https://mmatabuena.github.io/forecastCovid/real.](https://mmatabuena.github.io/forecastCovid/Rmds/real/index.html)
 
-* :bar_chart: __[Galicia](https://mmatabuena.github.io/forecastCovid/Rmds/galicia/main.html)__
-* :bar_chart: __[Madrid](https://mmatabuena.github.io/forecastCovid/Rmds/madrid/main.html)__
-* :bar_chart: __[Castilla y León](https://mmatabuena.github.io/forecastCovid/Rmds/cl/index.html)__
-* :bar_chart: __[Cataluña](https://mmatabuena.github.io/forecastCovid/Rmds/cat/index.html)__
-* :bar_chart: __[País Vasco](https://mmatabuena.github.io/forecastCovid/Rmds/pv/index.html)__
+* :chart_with_upwards_trend: __[Galicia](https://mmatabuena.github.io/forecastCovid/Rmds/Espana/Galicia/main.html)__
+* :chart_with_upwards_trend: __[Navarra](https://mmatabuena.github.io/forecastCovid/Rmds/Espana/Navarra/main.html)__
+* :chart_with_upwards_trend: __[Madrid](https://mmatabuena.github.io/forecastCovid/Rmds/Espana/Madrid/main.html)__
+* :chart_with_upwards_trend: __[Castilla y León](https://mmatabuena.github.io/forecastCovid/Rmds/Espana/Leon/main.html)__
+* :chart_with_upwards_trend: __[País Vasco](https://mmatabuena.github.io/forecastCovid/Rmds/Espana/Vasco/main.html)__
+* :chart_with_upwards_trend: __[Cataluña](https://mmatabuena.github.io/forecastCovid/Rmds/Espana/Cataluna/main.html)__
 
 Toda a metodoloxía empregada para construir as gráficas de esta web está descrita na publicación de [arXiv](https://arxiv.org/abs/2004.13695) "Estimating spread in Spain solving an inverse problem with a probabilistic model".
 
