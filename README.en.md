@@ -1,6 +1,6 @@
 ## Covid 19 model based on ... <a href="../../blob/master/README.es.md"><img src="../../blob/master/images/Flag_of_Spain.png" align="right" hspace="0" vspace="0" width="35px"></a> <a href="../../blob/master/README.en.md"><img src="../../blob/master/images/Flag_of_Union.png" align="right" hspace="0" vspace="0" width="35px"></a><a href="../../blob/master/README.ga.md"><img src="../../blob/master/images/Flag_of_Galicia.png" align="right" hspace="0" vspace="0" width="35px"></a>
 
-Visualization of data provided by the Government: [https://mmatabuena.github.io/forecastCovid/real.](https://mmatabuena.github.io/forecastCovid/Rmds/real/index.html)
+Visualization of data provided by the Government: :point_right: [www.forecastCovid](https://mmatabuena.github.io/forecastCovid/.)
 
 * :chart_with_upwards_trend: __[Galicia](https://mmatabuena.github.io/forecastCovid/Rmds/gal/index.html)__
 * :chart_with_upwards_trend: __[Castilla y León](https://mmatabuena.github.io/forecastCovid/Rmds/cl/index.html)__
