@@ -4,5 +4,7 @@
     "Cabecera03": "Other countries - big cities",
     "Cabecera04": "Selected country",
     "Pie01": "If you are opening this page from a mobile phone browser please use horizontal mode",
-    "Pie02": "To open all the content via GitHub click"
+    "Pie02": "To open all the content via GitHub click the next url:",
+    "Pie03": "Github Link",
+    "Pie04": "All the code used to create this data is described in the arXiv publication"
 }
