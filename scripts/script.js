@@ -35,6 +35,7 @@ function updateTexts(){
   $('#div04').text(language.Pie01);
   $('#div05').text(language.Pie02);	
   $('#div06').text(language.Cabecera04 + ' <' + localStorage.getItem('selRegionLongName') + '>');
+  $('#div07').text(language.Pie04);
 }
 
 function updateImages(){
@@ -45,6 +46,7 @@ function updateImages(){
   $('#Imagen_R2').prop('src','./Rmds/Espana/' + localStorage.getItem('selRegion') + '/Image_R2.png');
   $('#Imagen_M').prop('src','./Rmds/Espana/' + localStorage.getItem('selRegion') + '/Image_M.png'); 
   $('#Link_InfoExt').prop('href','./Rmds/Espana/' + localStorage.getItem('selRegion') + '/main.html');
+  $('#Link_Github').prop('text',language.Pie03); 
 }
 
 $(document).ready(function(){
