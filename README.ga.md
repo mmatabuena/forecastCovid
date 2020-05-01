@@ -1,6 +1,6 @@
 ## Modelo de difusión da COVID-19 <a href="../../blob/master/README.es.md"><img src="../../blob/master/images/Flag_of_Spain.png" align="right" hspace="0" vspace="0" width="35px"></a> <a href="../../blob/master/README.en.md"><img src="../../blob/master/images/Flag_of_Union.png" align="right" hspace="0" vspace="0" width="35px"></a><a href="../../blob/master/README.ga.md"><img src="../../blob/master/images/Flag_of_Galicia.png" align="right" hspace="0" vspace="0" width="35px"></a>
 
-A dinámica está xerada por un modelo probabilísitico representado no grafo. O número reprodutivo subxacente é unha función do tempo estimada resolvendo un problema inverso. 
+A dinámica está xerada por un modelo probabilísitico representado no grafo. O número reprodutivo subxacente é unha función do tempo estimada resolvendo un problema inverso computacionalmente costoso. 
 
 <img src="./images/graph.png" align="middle" hspace="20" vspace="10" width="500px">
 
