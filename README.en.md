@@ -2,7 +2,7 @@
 
 Dynamics are generated according to a probabilistic model which is represented by the graph. Underlying daily reproduction number is estimated as a function of time by solving an inverse problem. 
 
-<img src="./images/graph.png" align="middle" hspace="20" vspace="10" width="800px">
+<img src="./images/graph.png" align="middle" hspace="20" vspace="10" width="500px">
 
 Visualization of estimations based on data provided by the Government [here](https://mmatabuena.github.io/forecastCovid/.) :point_left:
 
