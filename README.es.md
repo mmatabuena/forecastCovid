@@ -2,7 +2,7 @@
 
 La dinámica está generada por un modelo probabilísitico representado en el grafo. El número reprodutivo subyacente es unha funcion del tiempo estimada resolviendo un problema inverso. 
 
-<img src="./images/graph.png" align="middle" hspace="20" vspace="10" width="800px">
+<img src="./images/graph.png" align="middle" hspace="20" vspace="10" width="500px">
 
 Web de resultados del modelo [aquí](https://mmatabuena.github.io/forecastCovid/.) :point_left:
 
