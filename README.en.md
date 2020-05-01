@@ -2,6 +2,8 @@
 
 Visualization of data provided by the Government:  [www.forecastCovid](https://mmatabuena.github.io/forecastCovid/.) :point_left:
 
+Or just direct access:
+
 * :chart_with_upwards_trend: __[Galicia](https://mmatabuena.github.io/forecastCovid/Rmds/Espana/Galicia/main.html)__
 * :chart_with_upwards_trend: __[Navarra](https://mmatabuena.github.io/forecastCovid/Rmds/Espana/Navarra/main.html)__
 * :chart_with_upwards_trend: __[Madrid](https://mmatabuena.github.io/forecastCovid/Rmds/Espana/Madrid/main.html)__

@@ -2,6 +2,8 @@
 
 Web de resultados del modelo: [www.forecastCovid](https://mmatabuena.github.io/forecastCovid/.) :point_left:
 
+O acceda directamente:
+
 * :chart_with_upwards_trend: __[Galicia](https://mmatabuena.github.io/forecastCovid/Rmds/Espana/Galicia/main.html)__
 * :chart_with_upwards_trend: __[Navarra](https://mmatabuena.github.io/forecastCovid/Rmds/Espana/Navarra/main.html)__
 * :chart_with_upwards_trend: __[Madrid](https://mmatabuena.github.io/forecastCovid/Rmds/Espana/Madrid/main.html)__

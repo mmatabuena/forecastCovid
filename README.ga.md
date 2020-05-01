@@ -1,6 +1,13 @@
-## Modelo do Covid 19 baseado en ... <a href="../../blob/master/README.es.md"><img src="../../blob/master/images/Flag_of_Spain.png" align="right" hspace="0" vspace="0" width="35px"></a> <a href="../../blob/master/README.en.md"><img src="../../blob/master/images/Flag_of_Union.png" align="right" hspace="0" vspace="0" width="35px"></a><a href="../../blob/master/README.ga.md"><img src="../../blob/master/images/Flag_of_Galicia.png" align="right" hspace="0" vspace="0" width="35px"></a>
+## Modelo de difusión da COVID-19 <a href="../../blob/master/README.es.md"><img src="../../blob/master/images/Flag_of_Spain.png" align="right" hspace="0" vspace="0" width="35px"></a> <a href="../../blob/master/README.en.md"><img src="../../blob/master/images/Flag_of_Union.png" align="right" hspace="0" vspace="0" width="35px"></a><a href="../../blob/master/README.ga.md"><img src="../../blob/master/images/Flag_of_Galicia.png" align="right" hspace="0" vspace="0" width="35px"></a>
 
-Web con visualización de datos aportados polo Goberno: [www.forecastCovid](https://mmatabuena.github.io/forecastCovid/.) :point_left:
+A dinámica está xerada por un modelo probabilísitico representado no grafo. A taxa de contaxios subxacente é unha función do tempo estimada resolvendo un problema inverso. 
+
+<img src="./images/graph.png" align="center" hspace="20" vspace="10" width="500px">
+
+
+Web con visualización de datos aportados polo Goberno [aquí](https://mmatabuena.github.io/forecastCovid/.) :point_left:
+
+Ou acceda directamente:
 
 * :chart_with_upwards_trend: __[Galicia](https://mmatabuena.github.io/forecastCovid/Rmds/Espana/Galicia/main.html)__
 * :chart_with_upwards_trend: __[Navarra](https://mmatabuena.github.io/forecastCovid/Rmds/Espana/Navarra/main.html)__
