@@ -17,7 +17,7 @@ O acceda directamente:
 
 Toda la metodología empleada para construir las gráficas de esta web está descrita en la publicación de [arXiv](https://arxiv.org/abs/2004.13695) "Estimating spread in Spain solving an inverse problem with a probabilistic model".
 
-<img src="./images/image_2020_04_19T13_34_22_302Z.jpg" align="left" hspace="20" vspace="10" width="150px">
+
 
 
 ### Soporte y Contacto

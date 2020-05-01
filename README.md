@@ -8,4 +8,4 @@
 
 * [Galego](README.ga.md) <a href="../../blob/master/README.ga.md"><img src="../../blob/master/images/Flag_of_Galicia.png" align="none" hspace="5" vspace="0" width="25px"></a>
 
-![](./images/animation.gif)
+![](./images/animation.gif)*Performance of an evolution strategy algortihm optimizing model parameters*

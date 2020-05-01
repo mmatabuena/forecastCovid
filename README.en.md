@@ -17,7 +17,6 @@ Or just direct access:
 
 All the methodology shown in this web is described in the [arXiv publication](https://arxiv.org/abs/2004.13695) "Estimating spread in Spain solving an inverse problem with a probabilistic model".
 
-<img src="./images/image_2020_04_19T13_34_22_302Z.jpg" align="left" hspace="20" vspace="10" width="150px">
 
 ### Support and contact
 
