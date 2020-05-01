@@ -8,6 +8,10 @@
 
 * [Galego](README.ga.md) <a href="../../blob/master/README.ga.md"><img src="../../blob/master/images/Flag_of_Galicia.png" align="none" hspace="5" vspace="0" width="25px"></a>
 
+<img src="./images/animation.gif" align="left" hspace="20" vspace="10" width="350px"><img src="./images/surface.gif" align="left" hspace="20" vspace="10" width="350px">
+
+
+
 ![](./images/animation.gif | width=200) ![](./images/surface.gif | width=200) 
 
 
