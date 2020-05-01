@@ -8,7 +8,7 @@
 
 * [Galego](README.ga.md) <a href="../../blob/master/README.ga.md"><img src="../../blob/master/images/Flag_of_Galicia.png" align="none" hspace="5" vspace="0" width="25px"></a>
 
-<img src="./images/animation.gif" align="left" hspace="20" vspace="10" width="400px"><img src="./images/surface.gif" align="right" hspace="20" vspace="10" width="400px">
+<img src="./images/animation.gif" align="left" hspace="20" vspace="10" width="360px"><img src="./images/surface.gif" align="right" hspace="20" vspace="10" width="360px">
 
 
 
