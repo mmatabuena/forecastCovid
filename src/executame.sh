@@ -3,7 +3,7 @@ nArchivoParam="ParInit_Optimos_Exp7.txt"
 c=0
 
 ## Declaración del array de comunidades para lanzar los scripts
-declare -a arr=("Galicia" "Cataluna" "Leon" "Vasco" "Madrid" "Navarra" "Zona_Test")
+declare -a arr=("Galicia" "Cataluna" "Leon" "Vasco" "Madrid" "Navarra") # "Zona_Test")
 
 ## Se recorren todos los elementos del array de Comunidades
 for varRegion in "${arr[@]}"
