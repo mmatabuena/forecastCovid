@@ -2,7 +2,7 @@
 
 A dinámica está xerada por un modelo probabilísitico representado no grafo. O número reprodutivo subxacente é unha función do tempo estimada resolvendo un problema inverso. 
 
-<img src="./images/graph.png" align="middle" hspace="20" vspace="10" width="800px">
+<img src="./images/graph.png" align="middle" hspace="20" vspace="10" width="500px">
 
 
 Web con visualización de datos aportados polo Goberno [aquí](https://mmatabuena.github.io/forecastCovid/.) :point_left:
