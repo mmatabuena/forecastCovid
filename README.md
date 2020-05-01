@@ -5,5 +5,5 @@
 
 <img src="./images/animation.gif" align="left" hspace="20" vspace="10" width="360px"><img src="./images/surface.gif" align="right" hspace="20" vspace="10" width="380px">
 
-*Performance of evolution strategy algortihm optimizing model parameters*
+Performance of evolution strategy algortihm optimizing model parameters
 
