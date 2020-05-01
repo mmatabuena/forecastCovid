@@ -2,7 +2,7 @@
 
 A dinámica está xerada por un modelo probabilísitico representado no grafo. A taxa de contaxios subxacente é unha función do tempo estimada resolvendo un problema inverso. 
 
-<img src="./images/graph.png" align="center" hspace="20" vspace="10" width="500px">
+<img src="./images/graph.png" align="middle" hspace="20" vspace="10" width="800px">
 
 
 Web con visualización de datos aportados polo Goberno [aquí](https://mmatabuena.github.io/forecastCovid/.) :point_left:
