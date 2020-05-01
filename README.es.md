@@ -1,6 +1,10 @@
-## Modelo del COVID-19 basado en ... <a href="../../blob/master/README.es.md"><img src="../../blob/master/images/Flag_of_Spain.png" align="right" hspace="0" vspace="0" width="35px"></a> <a href="../../blob/master/README.en.md"><img src="../../blob/master/images/Flag_of_Union.png" align="right" hspace="0" vspace="0" width="35px"></a><a href="../../blob/master/README.ga.md"><img src="../../blob/master/images/Flag_of_Galicia.png" align="right" hspace="0" vspace="0" width="35px"></a>
+## Modelo de difusión del COVID-19  <a href="../../blob/master/README.es.md"><img src="../../blob/master/images/Flag_of_Spain.png" align="right" hspace="0" vspace="0" width="35px"></a> <a href="../../blob/master/README.en.md"><img src="../../blob/master/images/Flag_of_Union.png" align="right" hspace="0" vspace="0" width="35px"></a><a href="../../blob/master/README.ga.md"><img src="../../blob/master/images/Flag_of_Galicia.png" align="right" hspace="0" vspace="0" width="35px"></a>
 
-Web de resultados del modelo: [www.forecastCovid](https://mmatabuena.github.io/forecastCovid/.) :point_left:
+La dinámica está generada por un modelo probabilísitico representado en el grafo. El número reprodutivo subyacente es unha funcion del tiempo estimada resolviendo un problema inverso. 
+
+<img src="./images/graph.png" align="middle" hspace="20" vspace="10" width="800px">
+
+Web de resultados del modelo [aquí](https://mmatabuena.github.io/forecastCovid/.) :point_left:
 
 O acceda directamente:
 

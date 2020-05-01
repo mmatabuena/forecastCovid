@@ -1,6 +1,10 @@
-## Covid 19 model based on ... <a href="../../blob/master/README.es.md"><img src="../../blob/master/images/Flag_of_Spain.png" align="right" hspace="0" vspace="0" width="35px"></a> <a href="../../blob/master/README.en.md"><img src="../../blob/master/images/Flag_of_Union.png" align="right" hspace="0" vspace="0" width="35px"></a><a href="../../blob/master/README.ga.md"><img src="../../blob/master/images/Flag_of_Galicia.png" align="right" hspace="0" vspace="0" width="35px"></a>
+## COVID-19 diffusion model <a href="../../blob/master/README.es.md"><img src="../../blob/master/images/Flag_of_Spain.png" align="right" hspace="0" vspace="0" width="35px"></a> <a href="../../blob/master/README.en.md"><img src="../../blob/master/images/Flag_of_Union.png" align="right" hspace="0" vspace="0" width="35px"></a><a href="../../blob/master/README.ga.md"><img src="../../blob/master/images/Flag_of_Galicia.png" align="right" hspace="0" vspace="0" width="35px"></a>
 
-Visualization of data provided by the Government:  [www.forecastCovid](https://mmatabuena.github.io/forecastCovid/.) :point_left:
+Dynamics are generated according to a probabilistic model which is represented by the graph. Underlying daily reproduction number is estimated as a function of time by solving an inverse problem. 
+
+<img src="./images/graph.png" align="middle" hspace="20" vspace="10" width="800px">
+
+Visualization of estimations based on data provided by the Government [here](https://mmatabuena.github.io/forecastCovid/.) :point_left:
 
 Or just direct access:
 
