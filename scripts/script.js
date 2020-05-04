@@ -36,6 +36,12 @@ function updateTexts(){
   $('#div05').text(language.Pie02);	
   $('#div06').text(language.Cabecera04 + ' <' + localStorage.getItem('selRegionLongName') + '>');
   $('#div07').text(language.Pie04);
+  $('#Texto_I1').prop('text',language.CabeceraTabla_I1);
+  $('#Texto_I2').prop('text',language.CabeceraTabla_I2);
+  $('#Texto_I3').prop('text',language.CabeceraTabla_I3); 
+  $('#Texto_M').prop('text',language.CabeceraTabla_M); 
+  $('#Texto_R1').prop('text',language.CabeceraTabla_R1); 
+  $('#Texto_R2').prop('text',language.CabeceraTabla_R2);
 }
 
 function updateImages(){
