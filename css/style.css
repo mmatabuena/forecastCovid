@@ -5,6 +5,10 @@
 	-moz-box-sizing: border-box;
 }
 
+td {
+  text-align: center;
+}
+
 .langIcon {
   margin-top: 8px;
   margin-right: 3px;	
