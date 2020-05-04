@@ -41,13 +41,13 @@ function updateTexts(){
 function updateImages(){
   $('#Imagen_I1').prop('src','./Rmds/Espana/' + localStorage.getItem('selRegion') + '/Image_I1.png');
   $('#Imagen_I2').prop('src','./Rmds/Espana/' + localStorage.getItem('selRegion') + '/Image_I2.png');
-  $('#Imagen_I3').prop('src','./Rmds/Espana/' + localStorage.getItem('selRegion') + '/Image_I1.png');
+  $('#Imagen_I3').prop('src','./Rmds/Espana/' + localStorage.getItem('selRegion') + '/Image_I3.png');
   $('#Imagen_M').prop('src','./Rmds/Espana/' + localStorage.getItem('selRegion') + '/Image_M.png');  
   $('#Imagen_R1').prop('src','./Rmds/Espana/' + localStorage.getItem('selRegion') + '/Image_R1.png');
   $('#Imagen_R2').prop('src','./Rmds/Espana/' + localStorage.getItem('selRegion') + '/Image_R2.png');
   $('#aRefImagen_I1').prop('href','./Rmds/Espana/' + localStorage.getItem('selRegion') + '/Image_I1.png');
   $('#aRefImagen_I2').prop('href','./Rmds/Espana/' + localStorage.getItem('selRegion') + '/Image_I2.png');
-  $('#aRefImagen_I3').prop('href','./Rmds/Espana/' + localStorage.getItem('selRegion') + '/Image_I1.png');
+  $('#aRefImagen_I3').prop('href','./Rmds/Espana/' + localStorage.getItem('selRegion') + '/Image_I3.png');
   $('#aRefImagen_M').prop('href','./Rmds/Espana/' + localStorage.getItem('selRegion') + '/Image_M.png');  
   $('#aRefImagen_R1').prop('href','./Rmds/Espana/' + localStorage.getItem('selRegion') + '/Image_R1.png');
   $('#aRefImagen_R2').prop('href','./Rmds/Espana/' + localStorage.getItem('selRegion') + '/Image_R2.png');
