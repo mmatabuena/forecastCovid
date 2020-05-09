@@ -4,6 +4,7 @@ var selRegionLongName;
 
 function getLanguage() {
  // console.log(localStorage.getItem('language'));
+ var url;
  (localStorage.getItem('language') == null) ? setLanguage('es') : false;
   $.ajax({ 
   url:  './scripts/' +  localStorage.getItem('language') + '.json', 
