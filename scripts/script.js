@@ -66,5 +66,5 @@ $(document).ready(function(){
   getRegion();
   updateTexts();
   updateImages();
-  console.log("Lang: <" + localStorage.getItem('language') + ">, Reg: <" + localStorage.getItem('selRegionLongName') + ">");
+  //console.log("Lang: <" + localStorage.getItem('language') + ">, Reg: <" + localStorage.getItem('selRegionLongName') + ">");
 });
