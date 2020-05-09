@@ -7,7 +7,7 @@ function getLanguage() {
  (localStorage.getItem('language') == null) ? setLanguage('es') : false;
   $.ajax({ 
   url:  './scripts/' +  localStorage.getItem('language') + '.json', 
-  dataType: 'json', async: false, dataType: 'json', 
+  dataType: 'json', async: true, dataType: 'json', 
   success: function (lang) { language = lang } });
 }
 
