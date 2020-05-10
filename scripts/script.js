@@ -4,6 +4,7 @@ var selRegionLongName;
 
 function getLanguage() {
  // console.log(localStorage.getItem('language'));
+ var url;
  (localStorage.getItem('language') == null) ? setLanguage('es') : false;
   $.ajax({ 
   url:  './scripts/' +  localStorage.getItem('language') + '.json', 
@@ -66,5 +67,5 @@ $(document).ready(function(){
   getRegion();
   updateTexts();
   updateImages();
-  console.log("Lang: <" + localStorage.getItem('language') + ">, Reg: <" + localStorage.getItem('selRegionLongName') + ">");
+  //console.log("Lang: <" + localStorage.getItem('language') + ">, Reg: <" + localStorage.getItem('selRegionLongName') + ">");
 });
