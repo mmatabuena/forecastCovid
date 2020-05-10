@@ -7,12 +7,6 @@ A dinámica está xerada por un modelo probabilísitico representado no grafo. O
 
 Web con visualización de datos aportados polo Goberno [aquí](https://mmatabuena.github.io/forecastCovid/.) :point_left:
 
-Ou acceda directamente:
-
-* :chart_with_upwards_trend: __[Galicia](https://mmatabuena.github.io/forecastCovid/Rmds/Espana/Galicia/main.html)__
-* :chart_with_upwards_trend: __[Navarra](https://mmatabuena.github.io/forecastCovid/Rmds/Espana/Navarra/main.html)__
-* :chart_with_upwards_trend: __[Madrid](https://mmatabuena.github.io/forecastCovid/Rmds/Espana/Madrid/main.html)__
-
 Toda a metodoloxía empregada para construir as gráficas de esta web está descrita na publicación de [arXiv](https://arxiv.org/abs/2004.13695) "Estimating spread in Spain solving an inverse problem with a probabilistic model".
 
 ### Soporte ou Contacto
