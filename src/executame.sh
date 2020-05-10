@@ -3,7 +3,7 @@ nArchivoParam="ParInit_Optimos_Sig4P.txt"
 c=0
 
 ## Declaración del array de comunidades para lanzar los scripts
-declare -a arr=("Rioja") # "Zona_Test")
+declare -a arr=("Rioja" "Asturias") # "Zona_Test")
 
 ## Se recorren todos los elementos del array de Comunidades
 for varRegion in "${arr[@]}"
