@@ -2,8 +2,8 @@
 title: "Resultados"
 author: "Carlos Meijide Garcia"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -19,21 +19,20 @@ library("ggplot2")
 # datosfda= fdata(trayectorias)
 # plot(datosfda)
 
-#setwd("~/Modelo_Covid_descargado/Results/Cataluna/")
+#setwd("~/Modelo_Covid_descargado/Results/Baleares/")
 
 ##############################
 ##### CAMBIAR DENDE AQUÍ #####
 ##############################
 
-i=15 #indice da autonomia
-
-i1_raw= read.table("../../src/Results/Espana/Navarra/SimulaNavarra_I1.txt")
-i2_raw= read.table("../../src/Results/Espana/Navarra/SimulaNavarra_I2.txt")
-i3_raw= read.table("../../src/Results/Espana/Navarra/SimulaNavarra_I3.txt")
-r1_raw= read.table("../../src/Results/Espana/Navarra/SimulaNavarra_R1.txt")
-r2_raw= read.table("../../src/Results/Espana/Navarra/SimulaNavarra_R2.txt")
-mortos_raw=read.table("../../src/Results/Espana/Navarra/SimulaNavarra_XM.txt")
-erro=read.table("../../src/Results/Espana/Navarra/SimulaNavarra_Error.txt")
+i=4 #indice da autonomia
+i1_raw= read.table("../../src/Results/Espana/Baleares/SimulaBaleares_I1.txt")
+i2_raw= read.table("../../src/Results/Espana/Baleares/SimulaBaleares_I2.txt")
+i3_raw= read.table("../../src/Results/Espana/Baleares/SimulaBaleares_I3.txt")
+r1_raw= read.table("../../src/Results/Espana/Baleares/SimulaBaleares_R1.txt")
+r2_raw= read.table("../../src/Results/Espana/Baleares/SimulaBaleares_R2.txt")
+mortos_raw=read.table("../../src/Results/Espana/Baleares/SimulaBaleares_XM.txt")
+erro=read.table("../../src/Results/Espana/Baleares/SimulaBaleares_Error.txt")
 
 i1_raw$V1=i1_raw$V1+1
 i2_raw$V1=i2_raw$V1+1
@@ -88,6 +87,8 @@ caben=reaisi[3:(ncol(mortos_raw)-r+1)]
 moreais=c(-1,rep(0,ncol(aceptados)-length(caben)-2),caben,-1)
 mortosconreais=rbind(aceptados,moreais)
 
+
+
 mord=gather(mortosconreais,key="dia",value="cantos",-V1,-dis)
 
 mord$dia=as.Date(mord$dia)
@@ -121,6 +122,7 @@ p2=ggplot(i1ord) +
   labs(x = "Date", y = "", 
        subtitle = paste("% of I1 in ", autonomias$Comunidad[i]))
 p2
+
 i2=i2_raw[aceptados$V1,]
 i2$dis=aceptados$dis
 
@@ -162,7 +164,6 @@ p5=ggplot(r1ord) +
   labs(x = "Date", y = "", 
        subtitle = paste("% of R1 in ", autonomias$Comunidad[i]))
 p5
-
 r2=r2_raw[aceptados$V1,]
 r2$dis=aceptados$dis
 
@@ -177,26 +178,40 @@ p6=ggplot(r2ord) +
        subtitle = paste("% of R2 in ", autonomias$Comunidad[i]))
 p6
 
-png("Navarra/Image_M.png",width=960,height=540)
+png("Baleares/Image_M.png",width=960,height=540)
 p1
 dev.off()
 
-png("Navarra/Image_I1.png",width=960,height=540)
+png("Baleares/Image_I1.png",width=960,height=540)
 p2
 dev.off()
 
-png("Navarra/Image_I2.png",width=960,height=540)
+png("Baleares/Image_I2.png",width=960,height=540)
 p3
 dev.off()
 
-png("Navarra/Image_I3.png",width=960,height=540)
+png("Baleares/Image_I3.png",width=960,height=540)
 p4
 dev.off()
 
-png("Navarra/Image_R1.png",width=960,height=540)
+png("Baleares/Image_R1.png",width=960,height=540)
 p5
 dev.off()
 
-png("Navarra/Image_R2.png",width=960,height=540)
+png("Baleares/Image_R2.png",width=960,height=540)
 p6
 dev.off()
+```
+```{r eval=FALSE, include=FALSE}
+totalcovid=gather(r1+r2+i1+i1+i3,key="dia",value="cantos",-V1,-dis)
+totalcovid$dia=as.Date(totalcovid$dia)
+
+ggplot(totalcovid) +
+  geom_line(aes(dia, 100*cantos/autonomias$Población[i],group= V1,alpha=1/((1+dis)^2)),colour='#00C08D',show.legend=FALSE) +
+  scale_x_date() +
+  theme_bw() +
+  labs(x = "Date", y = "", 
+       subtitle = paste("% of total people affected by COVID-19 in ", autonomias$Comunidad[i]))
+```
+
+

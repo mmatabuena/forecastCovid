@@ -35,6 +35,14 @@ r2_raw= read.table("../../src/Results/Espana/Madrid/SimulaMadrid_R2.txt")
 mortos_raw=read.table("../../src/Results/Espana/Madrid/SimulaMadrid_XM.txt")
 erro=read.table("../../src/Results/Espana/Madrid/SimulaMadrid_Error.txt")
 
+
+i1_raw$V1=i1_raw$V1+1
+i2_raw$V1=i2_raw$V1+1
+i3_raw$V1=i3_raw$V1+1
+r1_raw$V1=r1_raw$V1+1
+r2_raw$V1=r2_raw$V1+1
+mortos_raw$V1=mortos_raw$V1+1
+
 autonomias=read.csv("../../Data/Espana_Autonomias.csv",header=TRUE,sep='\t')
 
 reais=read.csv("../../Data/Espana_ccaa_covid19_fallecidos.csv",header=TRUE,sep=',')
