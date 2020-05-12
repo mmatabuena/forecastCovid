@@ -25,7 +25,7 @@ library("ggplot2")
 ##### CAMBIAR DENDE AQUÍ #####
 ##############################
 
-i=7#indice da autonomia
+i=7 #indice da autonomia
 i1_raw= read.table("../../src/Results/Espana/Leon/SimulaLeon_I1.txt")
 i2_raw= read.table("../../src/Results/Espana/Leon/SimulaLeon_I2.txt")
 i3_raw= read.table("../../src/Results/Espana/Leon/SimulaLeon_I3.txt")

@@ -25,7 +25,7 @@ library("ggplot2")
 ##### CAMBIAR DENDE AQUÍ #####
 ##############################
 
-i= 17#indice da autonomia
+i=17 #indice da autonomia
 i1_raw= read.table("../../src/Results/Espana/Rioja/SimulaRioja_I1.txt")
 i2_raw= read.table("../../src/Results/Espana/Rioja/SimulaRioja_I2.txt")
 i3_raw= read.table("../../src/Results/Espana/Rioja/SimulaRioja_I3.txt")
@@ -40,7 +40,6 @@ i3_raw$V1=i3_raw$V1+1
 r1_raw$V1=r1_raw$V1+1
 r2_raw$V1=r2_raw$V1+1
 mortos_raw$V1=mortos_raw$V1+1
-
 
 autonomias=read.csv("../../Data/Espana_Autonomias.csv",header=TRUE,sep='\t')
 
@@ -75,7 +74,7 @@ names(mortos_raw)[-1]=format(datas,"%Y-%m-%d")
 
 
 morultimodia=as.double(erro[1])
-    distancias=(abs(mortos_raw[,ncol(mortos_raw)]-morultimodia))
+distancias=(abs(mortos_raw[,ncol(mortos_raw)]-morultimodia))
 hist(distancias)
 
 index=order(distancias)
