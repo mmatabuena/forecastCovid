@@ -46,6 +46,6 @@ done
 #R -e "rmarkdown::render('../Rmds/Espana/res_leon.Rmd',output_file='../Rmds/leon/Espana/main.html')"
 #R -e "rmarkdown::render('../Rmds/Espana/res_galicia.Rmd',output_file='../Rmds/Espana/galicia/main.html')"
 
-#$ chmod +x tuScript
+#$ chmod +x executame.sh
 
 
