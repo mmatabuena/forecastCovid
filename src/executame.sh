@@ -3,7 +3,7 @@ nArchivoParam="ParInit_Optimos_Sig4P.txt"
 c=0
 
 ## Declaración del array de comunidades para lanzar los scripts
-declare -a arr=("Andalucia" "Aragon" "Asturias" "Baleares" "Canarias" "Cantabria" "Leon" "Mancha" "Cataluna" "Valencia" "Extremadura" "Galicia" "Madrid" "Murcia" "Navarra" "Vasco" "Rioja" "Ceuta" "Melilla" "Total" "Zona_Test") # IMPORTANTE colocalas na mesma orde que no arquivo Espana_ccaa_covid19_fallecidos.csv
+declare -a arr=("Andalucia" "Aragon" "Asturias" "Baleares" "Canarias" "Cantabria" "Leon" "Mancha" "Cataluna" "Valencia" "Extremadura" "Galicia" "Madrid" "Murcia" "Navarra" "Vasco" "Rioja" "Ceuta" "Melilla" "Total") # IMPORTANTE colocalas na mesma orde que no arquivo Espana_ccaa_covid19_fallecidos.csv
 
 ## Se recorren todos los elementos del array de Comunidades
 i=1
