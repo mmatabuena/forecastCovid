@@ -19,7 +19,7 @@ function setLanguage(lang) {
 }
 
 function getRegion() {
-  (localStorage.getItem('selRegion') == null) ? setRegion('Galicia','Galicia') : false;
+  (localStorage.getItem('selRegion') == null) ? setRegion('Rioja','Rioja') : false;
 }
 
 function setRegion(reg,regLN) {
