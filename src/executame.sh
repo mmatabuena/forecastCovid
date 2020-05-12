@@ -11,6 +11,11 @@ for varRegion in "${arr[@]}"
 do
     	sed "s/xxx/$i/g" ../Rmds/Espana/res_Zona_Test.Rmd > ../Rmds/Espana/res_$varRegion.Rmd
 	sed -i "s/Zona_Test/$varRegion/g" ../Rmds/Espana/res_$varRegion.Rmd
+ if [ ! -d ../Rmds/Espana/$varRegion ];
+    then
+      echo " ->Creando los directorios Rmd para <$varRegion>..."
+      mkdir ../Rmds/Espana/$varRegion
+    fi
 
     FILE_PARAM[c]="../Data/Espana/$varRegion/$nArchivoParam"
     FILE_PDIR[c]="../Data/Espana/$varRegion/"
