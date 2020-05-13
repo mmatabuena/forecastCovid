@@ -3,11 +3,12 @@
 
 ## :point_right: [Or go to website](https://mmatabuena.github.io/forecastCovid/.)
 
+Performance of evolution strategy algorithm optimizing model parameters
+
 | R0 Fit  | 3D Map with CMAES jumps  |
 | ------------- | ------------- |
 | <img src="./images/animation.gif" align="left" hspace="20" vspace="10" width="360px"> | <img src="./images/leon.gif" align="right" hspace="20" vspace="10" width="380px"> |
 
-Performance of evolution strategy algorithm optimizing model parameters
 
 ### NOTE: A new Web is also under construcction: [2nd Website](https://github.com/covid19-modeling)
 
