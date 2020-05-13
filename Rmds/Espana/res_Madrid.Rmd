@@ -95,14 +95,20 @@ mord=gather(mortosconreais,key="dia",value="cantos",-V1,-dis)
 
 mord$dia=as.Date(mord$dia)
 
-p1=ggplot(mord) +
-  geom_line(aes(dia, 100*cantos/autonomias$Población[i],group= V1,alpha=exp(-dis^2/(2*var(dis)))),colour='#00C08D',show.legend=FALSE) +
+p1=ggplot(mord[mord$dis!=-1,]) +
+  geom_line(aes(dia, 100*cantos/autonomias$Población[i],group=
+  V1,alpha=exp(-dis^2/(2*var(dis)))),colour='#00C08D',show.legend=FALSE) +
   geom_point(data=mord[mord$dis==-1,],aes(dia, 100*cantos/autonomias$Población[i]),colour='black') +
-  scale_x_date() +
+  scale_x_date(breaks = "1 week") +
+    scale_y_continuous(limits = c(0,max(100*mord$cantos/autonomias$Población[i])), 
+                       breaks = seq(0,max(100*mord$cantos/autonomias$Población[i]), by = 0.005))+
   theme_bw() +
-  labs(x = "Date", y = "", 
-       subtitle = paste("Fatality rate in ", autonomias$Comunidad[i]))
+  theme(plot.title = element_text(size = 30, face = "bold"),text = element_text(size=25),axis.text.x = element_text(angle = 60, hjust = 1)) +
+  labs(x = "Date", y = "") +
+  ggtitle(paste("Fatality rate in ", autonomias$Comunidad[i]))
 p1
+
+ 
 
 i1=i1_raw[aceptados$V1,]
 i1$dis=aceptados$dis
@@ -118,12 +124,16 @@ i1ord=gather(i1,key="dia",value="cantos",-V1,-dis)
 i1ord$dia=as.Date(i1ord$dia)
 
 p2=ggplot(i1ord) +
-  geom_line(aes(dia, 100*cantos/autonomias$Población[i],group= V1,alpha=1/((1+dis)^100)),colour='#00C08D',show.legend=FALSE) +
-  scale_x_date() +
+   geom_line(aes(dia, 100*cantos/autonomias$Población[i],group= V1,alpha=1/((1+dis)^100)),colour='#00C08D',show.legend=FALSE) +
+  scale_x_date(breaks = "1 week") +
+  scale_y_continuous(limits = c(0,max(100*i1ord$cantos/autonomias$Población[i])), 
+                       breaks = seq(0,max(100*i1ord$cantos/autonomias$Población[i]), by = 0.1))+
   theme_bw() +
-  labs(x = "Date", y = "", 
-       subtitle = paste("% of I1 in ", autonomias$Comunidad[i]))
+  theme(plot.title = element_text(size = 30, face = "bold"),text = element_text(size=25),axis.text.x = element_text(angle = 60, hjust = 1)) +
+  labs(x = "Date", y = "") +
+  ggtitle(paste("% of I1 in ", autonomias$Comunidad[i]))
 p2
+
 
 i2=i2_raw[aceptados$V1,]
 i2$dis=aceptados$dis
@@ -132,12 +142,16 @@ i2ord=gather(i2,key="dia",value="cantos",-V1,-dis)
 i2ord$dia=as.Date(i1ord$dia)
 
 p3=ggplot(i2ord) +
-  geom_line(aes(dia, 100*cantos/autonomias$Población[i],group= V1,alpha=1/((1+dis)^100)),colour='#00C08D',show.legend=FALSE) +
-  scale_x_date() +
+    geom_line(aes(dia, 100*cantos/autonomias$Población[i],group= V1,alpha=1/((1+dis)^100)),colour='#00C08D',show.legend=FALSE) +
+  scale_x_date(breaks = "1 week") +
+  scale_y_continuous(limits = c(0,max(100*i2ord$cantos/autonomias$Población[i])), 
+                       breaks = seq(0,max(100*i2ord$cantos/autonomias$Población[i]), by = 0.1))+
   theme_bw() +
-  labs(x = "Date", y = "", 
-       subtitle = paste("% of I2 in ", autonomias$Comunidad[i]))
+  theme(plot.title = element_text(size = 30, face = "bold"),text = element_text(size=25),axis.text.x = element_text(angle = 60, hjust = 1)) +
+  labs(x = "Date", y = "") +
+  ggtitle(paste("% of I2 in ", autonomias$Comunidad[i]))
 p3
+
 
 i3=i3_raw[aceptados$V1,]
 i3$dis=aceptados$dis
@@ -146,12 +160,16 @@ i3ord=gather(i3,key="dia",value="cantos",-V1,-dis)
 i3ord$dia=as.Date(i1ord$dia)
 
 p4=ggplot(i3ord) +
-  geom_line(aes(dia, 100*cantos/autonomias$Población[i],group= V1,alpha=1/((1+dis)^100)),colour='#00C08D',show.legend=FALSE) +
-  scale_x_date() +
+    geom_line(aes(dia, 100*cantos/autonomias$Población[i],group= V1,alpha=1/((1+dis)^100)),colour='#00C08D',show.legend=FALSE) +
+  scale_x_date(breaks = "1 week") +
+  scale_y_continuous(limits = c(0,max(100*i3ord$cantos/autonomias$Población[i])), 
+                       breaks = seq(0,max(100*i3ord$cantos/autonomias$Población[i]), by = 0.05))+
   theme_bw() +
-  labs(x = "Date", y = "", 
-       subtitle = paste("% of I3 in ", autonomias$Comunidad[i]))
+  theme(plot.title = element_text(size = 30, face = "bold"),text = element_text(size=25),axis.text.x = element_text(angle = 60, hjust = 1)) +
+  labs(x = "Date", y = "") +
+  ggtitle(paste("% of I3 in ", autonomias$Comunidad[i]))
 p4
+
 
 r1=r1_raw[aceptados$V1,]
 r1$dis=aceptados$dis
@@ -160,12 +178,16 @@ r1ord=gather(r1,key="dia",value="cantos",-V1,-dis)
 r1ord$dia=as.Date(r1ord$dia)
 
 p5=ggplot(r1ord) +
-  geom_line(aes(dia, 100*cantos/autonomias$Población[i],group= V1,alpha=1/((1+dis)^100)),colour='#00C08D',show.legend=FALSE) +
-  scale_x_date() +
+   geom_line(aes(dia, 100*cantos/autonomias$Población[i],group= V1,alpha=1/((1+dis)^100)),colour='#00C08D',show.legend=FALSE) +
+  scale_x_date(breaks = "1 week") +
+  scale_y_continuous(limits = c(0,max(100*r1ord$cantos/autonomias$Población[i])), 
+                       breaks = seq(0,max(100*r1ord$cantos/autonomias$Población[i]), by = 0.5))+
   theme_bw() +
-  labs(x = "Date", y = "", 
-       subtitle = paste("% of R1 in ", autonomias$Comunidad[i]))
+  theme(plot.title = element_text(size = 30, face = "bold"),text = element_text(size=25),axis.text.x = element_text(angle = 60, hjust = 1)) +
+  labs(x = "Date", y = "") +
+  ggtitle(paste("% of R1 in ", autonomias$Comunidad[i]))
 p5
+
 r2=r2_raw[aceptados$V1,]
 r2$dis=aceptados$dis
 
@@ -173,71 +195,126 @@ r2ord=gather(r2,key="dia",value="cantos",-V1,-dis)
 r2ord$dia=as.Date(r2ord$dia)
 
 p6=ggplot(r2ord) +
-  geom_line(aes(dia, 100*cantos/autonomias$Población[i],group= V1,alpha=1/((1+dis)^100)),colour='#00C08D',show.legend=FALSE) +
-  scale_x_date() +
+   geom_line(aes(dia, 100*cantos/autonomias$Población[i],group= V1,alpha=1/((1+dis)^100)),colour='#00C08D',show.legend=FALSE) +
+  scale_x_date(breaks = "1 week") +
+  scale_y_continuous(limits = c(0,max(100*r2ord$cantos/autonomias$Población[i])), 
+                       breaks = seq(0,max(100*r2ord$cantos/autonomias$Población[i]), by = 0.5))+
   theme_bw() +
-  labs(x = "Date", y = "", 
-       subtitle = paste("% of R2 in ", autonomias$Comunidad[i]))
+  theme(plot.title = element_text(size = 30, face = "bold"),text = element_text(size=25),axis.text.x = element_text(angle = 60, hjust = 1)) +
+  labs(x = "Date", y = "") +
+  ggtitle(paste("% of R2 in ", autonomias$Comunidad[i]))
 p6
 
 totord=gather(i1+i2+i3+r1+r2,key="dia",value="cantos",-V1,-dis)
 totord$dia=as.Date(totord$dia)
 totord$dis=i1ord$dis
 
+
+
 p7=ggplot(totord) +
-  geom_line(aes(dia,cantos,group= V1,alpha=1/((1+dis)^100)),colour='#00C08D',show.legend=FALSE) +
-  scale_x_date() +
+    geom_line(aes(dia, cantos,group= V1,alpha=1/((1+dis)^100)),colour='#00C08D',show.legend=FALSE) +
+  scale_x_date(breaks = "1 week") +
+   scale_y_continuous(limits = c(0,max(totord$cantos)), 
+                       breaks = seq(0,max(totord$cantos), by = 8000))+
   theme_bw() +
-  labs(x = "Date", y = "", 
-       subtitle = paste("Total number of affected individuals (I1 + I2 + I3 + R1 + R2) in ", autonomias$Comunidad[i]))
+ 
+  theme(plot.title = element_text(size = 15, face = "bold"),text = element_text(size=25),axis.text.x = element_text(angle = 60, hjust = 1)) +
+  labs(x = "Date", y = "") +
+  ggtitle(paste("Total number of affected individuals (I1 + I2 + I3 + R1 + R2) in ", autonomias$Comunidad[i]))
 p7
+
+ 
 
 rtotord=gather(r1+r2,key="dia",value="cantos",-V1,-dis)
 rtotord$dia=as.Date(rtotord$dia)
 rtotord$dis=i1ord$dis
 
 p8=ggplot(rtotord) +
-  geom_line(aes(dia,cantos,group= V1,alpha=1/((1+dis)^100)),colour='#00C08D',show.legend=FALSE) +
-  scale_x_date() +
+    geom_line(aes(dia, cantos,group= V1,alpha=1/((1+dis)^100)),colour='#00C08D',show.legend=FALSE) +
+  scale_x_date(breaks = "1 week") +
+   scale_y_continuous(limits = c(0,max(rtotord$cantos)), 
+                       breaks = seq(0,max(rtotord$cantos), by = 8000))+
   theme_bw() +
-  labs(x = "Date", y = "", 
-       subtitle = paste("Total number of recovered individuals (R1 + R2) in ", autonomias$Comunidad[i]))
+ 
+  theme(plot.title = element_text(size = 30, face = "bold"),text = element_text(size=25),axis.text.x = element_text(angle = 60, hjust = 1)) +
+  labs(x = "Date", y = "") +
+  ggtitle(paste("Total number of recovered individuals (R1 + R2) in ", autonomias$Comunidad[i]))
 p8
+
 
 ```
 
 
 ```{r message=FALSE, warning=FALSE, include=FALSE}
-png("Madrid/Image_M.png",width=960,height=540)
+png("Madrid/Image_M.png",width=1600,height=800)
 p1
 dev.off()
 
-png("Madrid/Image_I1.png",width=960,height=540)
+jpeg("Madrid/Image_M.jpg",width=960,height=540,quality = 50)
+p1
+dev.off()
+
+
+png("Madrid/Image_I1.png",width=1600,height=800)
 p2
 dev.off()
 
-png("Madrid/Image_I2.png",width=960,height=540)
+jpeg("Madrid/Image_I1.jpg",width=960,height=540,quality = 50)
+p2
+dev.off()
+
+png("Madrid/Image_I2.png",width=1600,height=800)
 p3
 dev.off()
 
-png("Madrid/Image_I3.png",width=960,height=540)
+jpeg("Madrid/Image_I2.jpg",width=960,height=540,quality = 50)
+p3
+dev.off()
+
+
+png("Madrid/Image_I3.png",width=1600,height=800)
 p4
 dev.off()
 
-png("Madrid/Image_R1.png",width=960,height=540)
+jpeg("Madrid/Image_I3.jpg",width=960,height=540,quality = 50)
+p4
+dev.off()
+
+
+png("Madrid/Image_R1.png",width=1600,height=800)
 p5
 dev.off()
 
-png("Madrid/Image_R2.png",width=960,height=540)
+jpeg("Madrid/Image_R1.jpg",width=960,height=540,quality = 50)
+p5
+dev.off()
+
+
+png("Madrid/Image_R2.png",width=1600,height=800)
 p6
 dev.off()
 
-png("Madrid/Image_T.png",width=960,height=540)
+jpeg("Madrid/Image_R2.jpg",width=960,height=540,quality = 50)
+p6
+dev.off()
+
+
+png("Madrid/Image_T.png",width=1600,height=800)
 p7
 dev.off()
 
-png("Madrid/Image_TR.png",width=960,height=540)
+jpeg("Madrid/Image_T.jpg",width=960,height=540,quality = 50)
+p7
+dev.off()
+
+
+png("Madrid/Image_TR.png",width=1600,height=800)
 p8
 dev.off()
+
+jpeg("Madrid/Image_TR.jpg",width=960,height=540,quality = 50)
+p8
+dev.off()
+
 ```
 
