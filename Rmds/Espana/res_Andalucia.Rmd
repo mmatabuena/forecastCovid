@@ -10,7 +10,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-```{r}
+```{r echo=FALSE, message=FALSE, warning=FALSE}
 library("tidyr")
 library("ggplot2")
 
@@ -75,13 +75,15 @@ names(mortos_raw)[-1]=format(datas,"%Y-%m-%d")
 
 morultimodia=as.double(erro[1])
 distancias=(abs(mortos_raw[,ncol(mortos_raw)]-morultimodia))
-hist(distancias)
+hist(distancias,main="Last day error",xlab="Individuals")
 
 index=order(distancias)
 ordenados=mortos_raw[index,]
 ordenados$dis=distancias[index]
 aceptados=ordenados[ordenados$dis<morultimodia*0.1,]
 mortos=aceptados
+
+aceptados[1,ncol(aceptados)]=-0.9 #para que soamente apareza unha liña grosa nas graficas que non son de M
 
 caben=reaisi[3:(ncol(mortos_raw)-r+1)]
 moreais=c(-1,rep(0,ncol(aceptados)-length(caben)-2),caben,-1)
@@ -106,11 +108,11 @@ i1=i1_raw[aceptados$V1,]
 i1$dis=aceptados$dis
 
 
-library("fda.usc")
-trayectorias= i1[,-c(1,ncol(i1))]
-datosfda= fdata(trayectorias)
-plot(datosfda)
- 
+# library("fda.usc")
+# trayectorias= i1[,-c(1,ncol(i1))]
+# datosfda= fdata(trayectorias)
+# plot(datosfda)
+#  
 
 i1ord=gather(i1,key="dia",value="cantos",-V1,-dis)
 i1ord$dia=as.Date(i1ord$dia)
@@ -178,6 +180,34 @@ p6=ggplot(r2ord) +
        subtitle = paste("% of R2 in ", autonomias$Comunidad[i]))
 p6
 
+totord=gather(i1+i2+i3+r1+r2,key="dia",value="cantos",-V1,-dis)
+totord$dia=as.Date(totord$dia)
+totord$dis=i1ord$dis
+
+p7=ggplot(totord) +
+  geom_line(aes(dia,cantos,group= V1,alpha=1/((1+dis)^100)),colour='#00C08D',show.legend=FALSE) +
+  scale_x_date() +
+  theme_bw() +
+  labs(x = "Date", y = "", 
+       subtitle = paste("Total number of affected individuals (I1 + I2 + I3 + R1 + R2) in ", autonomias$Comunidad[i]))
+p7
+
+rtotord=gather(r1+r2,key="dia",value="cantos",-V1,-dis)
+rtotord$dia=as.Date(rtotord$dia)
+rtotord$dis=i1ord$dis
+
+p8=ggplot(rtotord) +
+  geom_line(aes(dia,cantos,group= V1,alpha=1/((1+dis)^100)),colour='#00C08D',show.legend=FALSE) +
+  scale_x_date() +
+  theme_bw() +
+  labs(x = "Date", y = "", 
+       subtitle = paste("Total number of recovered individuals (R1 + R2) in ", autonomias$Comunidad[i]))
+p8
+
+```
+
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
 png("Andalucia/Image_M.png",width=960,height=540)
 p1
 dev.off()
@@ -201,17 +231,13 @@ dev.off()
 png("Andalucia/Image_R2.png",width=960,height=540)
 p6
 dev.off()
-```
-```{r eval=FALSE, include=FALSE}
-totalcovid=gather(r1+r2+i1+i1+i3,key="dia",value="cantos",-V1,-dis)
-totalcovid$dia=as.Date(totalcovid$dia)
 
-ggplot(totalcovid) +
-  geom_line(aes(dia, 100*cantos/autonomias$Población[i],group= V1,alpha=1/((1+dis)^2)),colour='#00C08D',show.legend=FALSE) +
-  scale_x_date() +
-  theme_bw() +
-  labs(x = "Date", y = "", 
-       subtitle = paste("% of total people affected by COVID-19 in ", autonomias$Comunidad[i]))
-```
+png("Andalucia/Image_T.png",width=960,height=540)
+p7
+dev.off()
 
+png("Andalucia/Image_TR.png",width=960,height=540)
+p8
+dev.off()
+```
 
