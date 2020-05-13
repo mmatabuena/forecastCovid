@@ -43,6 +43,8 @@ function updateTexts(){
   $('#Texto_M').prop('innerHTML',language.CabeceraTabla_M); 
   $('#Texto_R1').prop('innerHTML',language.CabeceraTabla_R1); 
   $('#Texto_R2').prop('innerHTML',language.CabeceraTabla_R2);
+  $('#Texto_T').prop('innerHTML',language.CabeceraTabla_T); 
+  $('#Texto_TR').prop('innerHTML',language.CabeceraTabla_TR); 
 }
 
 function updateImages(){
