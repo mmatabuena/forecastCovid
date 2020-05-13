@@ -24,6 +24,28 @@ ul {
   /* box-shadow: 8px 11px 10px 0px black; */
 }
 
+.banner-rojo{
+	background: linear-gradient(to top, rgba(0.8, 0, 0, 0.8), rgba(0.2, 0, 0, 0)), url(./images/CORONAVIRUS-ROJO.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.banner-verde{
+	background: linear-gradient(to top, rgba(0, 0.8, 0, 0.8), rgba(0, 0.2, 0, 0)), url(./images/CORONAVIRUS-VERDE.jpg) no-repeat center;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.banner-cian{
+	background: linear-gradient(to top, rgba(0, 0, 0.8, 0.8), rgba(0, 0, 0.2, 0)), url(./images/CORONAVIRUS-CIAN.jpg) no-repeat center;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .isDisabled {
   color: currentColor;
   cursor: not-allowed;
