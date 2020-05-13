@@ -3,14 +3,14 @@
 
 ## :point_right: [Or go to website](https://mmatabuena.github.io/forecastCovid/.)
 
-### NOTE: A new Web is also under construcction: [2nd Website](https://github.com/covid19-modeling)
-
+```markdown
 Performance of evolution strategy algorithm optimizing model parameters
 
 <img src="./images/animation.gif" align="left" hspace="20" vspace="10" width="360px"><img src="./images/leon.gif" align="right" hspace="20" vspace="10" width="380px"><br>
 
+```
 
-
+## NOTE: A new Web is also under construcction: [2nd Website](https://github.com/covid19-modeling)
 
 
 
