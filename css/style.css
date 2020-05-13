@@ -30,7 +30,8 @@ ul {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding-bottom: 5px;	
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 .banner-verde{
     background: linear-gradient(to top, rgba(0, 255, 0, 0.8), rgba(0, 50, 0, 0)), url(./images/CORONAVIRUS-VERDE.jpg) no-repeat center;
@@ -38,7 +39,8 @@ ul {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    padding-bottom: 5px;	
+    padding-bottom: 5px;
+    padding-top: 5px;	
 }
 .banner-cian{
     background: linear-gradient(to top, rgba(0, 0, 255, 0.8), rgba(0, 0, 50, 0)), url(./images/CORONAVIRUS-CIAN.jpg) no-repeat center;
@@ -47,6 +49,7 @@ ul {
     -o-background-size: cover;
     background-size: cover;
     padding-bottom: 5px;
+    padding-top: 5px;	
 }
 
 .isDisabled {
