@@ -10,7 +10,7 @@ Performance of evolution strategy algorithm optimizing model parameters
 | <img src="./images/animation.gif" align="left" hspace="20" vspace="10" width="360px"> | <img src="./images/leon.gif" align="right" hspace="20" vspace="10" width="380px"> |
 
 
-### NOTE: A new Web is also under construcction: [2nd Website](https://github.com/covid19-modeling)
+**NOTE**: A new Web is also under construcction: [2nd Website](https://github.com/covid19-modeling)
 
 
 
