@@ -25,7 +25,7 @@ ul {
 }
 
 .banner-rojo{
-    background: linear-gradient(to top, rgba(255, 0, 0, 0.2), rgba(50, 0, 0, 0));
+    background: linear-gradient(to top, rgba(255, 0, 0, 0.4), rgba(50, 0, 0, 0.1));
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -34,7 +34,7 @@ ul {
     padding-top: 5px;
 }
 .banner-verde{
-    background: linear-gradient(to top, rgba(0, 255, 0, 0.2), rgba(0, 50, 0, 0));
+    background: linear-gradient(to top, rgba(0, 255, 0, 0.4), rgba(0, 50, 0, 0.1));
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -43,7 +43,7 @@ ul {
     padding-top: 5px;	
 }
 .banner-cian{
-    background: linear-gradient(to top, rgba(0, 0, 255, 0.2), rgba(0, 0, 50, 0));
+    background: linear-gradient(to top, rgba(0, 0, 255, 0.4), rgba(0, 0, 50, 0.1));
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
