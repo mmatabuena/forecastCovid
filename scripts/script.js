@@ -23,10 +23,11 @@ function getRegion() {
   (localStorage.getItem('selRegion') == null) ? setRegion('Rioja','Rioja','Espana') : false;
 }
 
-function setRegion(reg,regLN,country) {
+function setRegion(reg,regLN,country,countryLN) {
   localStorage.setItem('selRegion', reg);
   localStorage.setItem('selRegionLongName', regLN); 
   localStorage.setItem('selCountry', country);
+  localStorage.setItem('selCountryLongName', countryLN); 
   updateTexts();
   updateImages();
 }
@@ -38,7 +39,7 @@ function updateTexts(){
   $('#div04').text(language.Pie01);
   $('#div05').text(language.Pie02);	
   $('#div06').text(language.Cabecera04);
-  $('#div08').text(' <' + localStorage.getItem('selCountry') + ' / ' + localStorage.getItem('selRegionLongName')'>');  
+  $('#div08').text(' <' + localStorage.getItem('selCountryLongName') + ' / ' + localStorage.getItem('selRegionLongName') + '>');  
   $('#div07').text(language.Pie04);
   $('#Texto_I1').prop('innerHTML',language.CabeceraTabla_I1);
   $('#Texto_I2').prop('innerHTML',language.CabeceraTabla_I2);
