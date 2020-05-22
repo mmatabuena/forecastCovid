@@ -18,7 +18,7 @@ do
     fi
 
     FILE_PARAM[c]="../Data/Espana/$varRegion/$nArchivoParam"
-    FILE_PDIR[c]="../Data/Espana/$varRegion/"
+    FILE_PDIR[c]="Results/Espana/$varRegion/"
     #echo " -> Lanzando Scripts de C++ y R en <$varRegion> con <${FILE_PARAM[c]}>"
     # Se comprueba que existen los directorios base ...
     if [ ! -d ${FILE_PDIR[c]} ];
@@ -33,7 +33,7 @@ do
       #echo " -> Se ha ignorado <$varRegion>, no está disponible el archivo <${FILE_PARAM[c]}.."
     else
       echo "$(tput setaf 3)-> Lanzando Scripts de C++ y R en <$varRegion> con indice <$i> ...$(tput sgr 0)"
-      ./runsimular_paral 0 0 600 ${FILE_PARAM[c]} $varRegion > ./Results/Espana/log_$varRegion.txt
+      ./runsimular_paral 0 600 ${FILE_PARAM[c]} $varRegion Espana > ./Results/Espana/log_$varRegion.txt
       R -e "rmarkdown::render(input='../Rmds/Espana/res_$varRegion.Rmd',output_file='$varRegion/main.html',output_format='html_document')"
     fi
     c=$(($c+1));
