@@ -16,12 +16,16 @@ th {
 }
 
 ul {
-  margin-left: 20px;
-  columns: 5;
-  -webkit-columns: 5;
-  -moz-columns: 5;
+  margin-left: 50px;
+  columns: 6;
+  -webkit-columns: 6;
+  -moz-columns: 6;
   width: max-content;
   /* box-shadow: 8px 11px 10px 0px black; */
+}
+
+li {
+  width: 130px;
 }
 
 .banner-rojo{
