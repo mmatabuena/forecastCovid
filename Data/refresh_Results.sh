@@ -5,10 +5,8 @@ cd $HOME/Github_Pages/forecastCovid
 
 nRegion=Aosta
 ## declare an array variable
-#declare -a arr=("Abruzzo" "Basilicata" "Calabria" "Campania" "Romagna" "Venezia" "Lazio" "Liguria" "Lombardia" "Marche" "Molise")
-#declare -a arr=("Bolzano" "Trento" "Piemonte" "Puglia" "Sardegna" "Sicilia" "Toscana" "Umbria" "Aosta" "Veneto")
+#declare -a arr=("Abruzzo" "Basilicata" "Calabria" "Campania" "Romagna" "Venezia" "Lazio" "Liguria" "Lombardia" "Marche" "Molise" "Bolzano" "Trento" "Piemonte" "Puglia" "Sardegna" "Sicilia" "Toscana" "Umbria" "Aosta" "Veneto")
 
-declare -a arr=("Aosta" "Bolzano" "Piemonte" "Puglia" "Sardegna" "Sicilia" "Toscana" "Trento" "Umbria")
 ## Se recorren todos los elementos del array de Comunidades
 i=1
 c=0
