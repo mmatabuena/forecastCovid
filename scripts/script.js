@@ -2,6 +2,7 @@ var language;
 var selRegion;
 var selRegionLongName;
 var selCountry;
+var selCountryLongName;
 
 function getLanguage() {
  // console.log(localStorage.getItem('language'));
