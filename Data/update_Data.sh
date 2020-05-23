@@ -3,7 +3,7 @@
 #PBS -N TestsSobreCPP
 
 # Se accede al directorio con el script de Matlab ...
-cd ./Data/Espana
+cd ./Espana
 mv Espana_Fallecidos.csv Espana_Fallecidos_TMP.csv
 
 echo ""
