@@ -48,5 +48,4 @@ done
 
 
 
-"Abruzzo" "Basilicata" "Calabria" "Campania" "Emilia-Romagna" "Friuli" "Lazio" "Liguria" "Lombardia" "Marche" "Molise" "Bolzano" "Trento" "Piemonte" "Puglia" "Sardegna" "Sicilia" "Toscana" "Umbria" "Aosta" "Veneto"
 

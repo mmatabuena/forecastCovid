@@ -33,7 +33,7 @@ r1_raw= read.table("../../src/Results/Italia/Marche/SimulaMarche_R1.txt")
 r2_raw= read.table("../../src/Results/Italia/Marche/SimulaMarche_R2.txt")
 mortos_raw=read.table("../../src/Results/Italia/Marche/SimulaMarche_XM.txt")
 erro=read.table("../../src/Results/Italia/Marche/SimulaMarche_Error.txt")
-reais_raw=read.table("../../src/Results/Italia/Basilicata/SimulaBasilicata_XM_Real.txt")
+reais_raw=read.table("../../src/Results/Italia/Marche/SimulaMarche_XM_Real.txt")
 
 
 i1_raw$V1=i1_raw$V1+1

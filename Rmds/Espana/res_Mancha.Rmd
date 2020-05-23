@@ -33,6 +33,8 @@ r1_raw= read.table("../../src/Results/Espana/Mancha/SimulaMancha_R1.txt")
 r2_raw= read.table("../../src/Results/Espana/Mancha/SimulaMancha_R2.txt")
 mortos_raw=read.table("../../src/Results/Espana/Mancha/SimulaMancha_XM.txt")
 erro=read.table("../../src/Results/Espana/Mancha/SimulaMancha_Error.txt")
+reais_raw=read.table("../../src/Results/Espana/Mancha/SimulaMancha_XM_Real.txt")
+
 
 i1_raw$V1=i1_raw$V1+1
 i2_raw$V1=i2_raw$V1+1
@@ -49,7 +51,7 @@ reais=read.csv("../../Data/Espana/Espana_Fallecidos.csv",header=TRUE,sep=',')
 ##### ATA AQUI #####
 ####################
 
-reaisi=as.numeric(reais[(reais$cod_ine)==i,])
+reaisi=as.numeric(reais[(reais[,1])==i,])
 
 nceros=0
 j=0
@@ -91,8 +93,7 @@ mortos=aceptados
 
 aceptados[1,ncol(aceptados)]=-0.9 #para que soamente apareza unha liña grosa nas graficas que non son de M
 
-caben=reaisi[3:(ncol(mortos_raw)-r+1)]
-moreais=c(-1,rep(0,ncol(aceptados)-length(caben)-2),caben,-1)
+moreais=c(-1,as.numeric(reais_raw[1,2:length(reais_raw)]),-1)
 mortosconreais=rbind(aceptados,moreais)
 
 
