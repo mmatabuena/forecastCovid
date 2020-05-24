@@ -8,11 +8,17 @@ Datos de Prevalencia:
     <td>Aragón</td>
   </tr>
   <tr>
+  <td>Estimación</td>
+    <td>??</td>
+    <td>??</td>    
+    <td>??</td>      
+  </tr>  
+  <tr>
     <td>Prevalencia</td>
     <td>??</td>
     <td>??</td>    
     <td>??</td>      
-  </tr>
+  </tr>  
 </table>
 
 
