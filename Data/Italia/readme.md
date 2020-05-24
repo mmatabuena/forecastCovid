@@ -39,8 +39,7 @@
  
   ## Ajustes pendientes
    - **Romagna**:    
-   - **Venezia**: 
-   - **Molise**:    
+   - **Venezia**:   
    
   ## Otras notas
   - **Lazio**: Trayectoria creciente !!!
