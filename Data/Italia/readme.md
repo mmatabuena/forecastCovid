@@ -2,16 +2,14 @@
 Datos de Prevalencia:
 <table>
   <tr>
-    <td>1</td>
-    <td>2</td>
-    <td>3</td>
+    <td><td>
+    <td>Andalucía</td>
+    <td>Asturias</td>
+    <td>Aragón</td>
   </tr>
   <tr>
-    <td colspan="2">Ocupa 2 columnas</td>
+    <td>Prevalencia<td>
     <td>4</td>
-  </tr>
-  <tr>
-    <td colspan="3">Ocupa 3 columnas</td>
   </tr>
 </table>
 
