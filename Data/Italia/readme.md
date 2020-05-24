@@ -33,7 +33,6 @@ Datos de Prevalencia:
   
  ## Ajustes malos de fin de trayectoria
   - **Calabria**: Las trayectorias no solapan del 27 Abr al 18 May
-  - **Cantabria**: Las trayectorias no solapan del 16 Mar a 6 Abr 
   - **Piemonte**: Las trayectorias no solapan en todo el rango  
   - **Sardegna**: Las trayectorias no solapan en todo el rango    
   - **Toscana**: Las trayectorias no solapan en todo el rango    
