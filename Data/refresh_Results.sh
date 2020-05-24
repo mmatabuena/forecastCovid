@@ -44,7 +44,7 @@ do
          mkdir ${FILE_DESTDATA[c]}
        fi
 
-       echo "   -> Pegando los archivos de parámetros en el directorio de Github y en Data"
+       echo "   -> Pegando los archivos de parámetros en el directorio de Github y en Data con fecha <$dataUPD>"
        cp ${FILE_ORGDIR[c]}/ParInit_Optimos_"$varRegion"_N01.txt ${FILE_DESTGITHUB[c]}/ParInit_Optimos_Sig4P.txt
        cp ${FILE_ORGDIR[c]}/ParInit_Optimos_"$varRegion"_N01.txt ${FILE_DESTGITHUB[c]}/ParInit_Optimos_Sig4P_"$dataUPD".txt
        cp ${FILE_ORGDIR[c]}/ParInit_Optimos_"$varRegion"_N01.txt ${FILE_DESTDATA[c]}/ParInit_Optimos_Sig4P.txt
