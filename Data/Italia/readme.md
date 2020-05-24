@@ -23,12 +23,6 @@ Datos de Prevalencia:
 
 
 ## Información Extra de los saltos en las comunidades
-
- - **Asturias**: Salto el día 19 Mayo ???
- - **Asturias**: Salto el día 18 Abril ??? 
- - **Canarias**: Salto el 30 Mar, 13 Abr y 24 Abr 
- - **Extremadura**: Salto el día 6 Abril ???
- 
   - **Lazio**: Salto el día 8 Mayo ???
   - **Bolzano**: Salto el día 8 Abril ???  
   - **Trento**: Salto el día 26 Abril ???   
@@ -38,10 +32,6 @@ Datos de Prevalencia:
   - **Aosta**: Salto el día 4 Abril ???     
   
  ## Ajustes malos de fin de trayectoria
-  - **Aragon**: Las trayectorias no solapan del 23 Mar al 6 Abr
-  - **Cantabria**: Las trayectorias no solapan del 20 Abr al 4 May
-  - **Murcia**: Las trayectorias no solapan en casi todo el rango, están sobreestimadas
- 
   - **Calabria**: Las trayectorias no solapan del 27 Abr al 18 May
   - **Cantabria**: Las trayectorias no solapan del 16 Mar a 6 Abr 
   - **Piemonte**: Las trayectorias no solapan en todo el rango  
@@ -49,8 +39,6 @@ Datos de Prevalencia:
   - **Toscana**: Las trayectorias no solapan en todo el rango    
  
   ## Ajustes pendientes
-   - **Galicia**: 
-   - **Navarra**: 
    - **Romagna**:    
    - **Venezia**: 
    - **Maoliche**:    
