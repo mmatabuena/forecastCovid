@@ -7,7 +7,8 @@ Datos de Prevalencia:
     <td>Aragón</td>
   </tr>
   <tr>
-    <td>Prevalencia<td>
+    <td></td>
+    <td>Prevalencia</td>
     <td>4</td>
   </tr>
 </table>
