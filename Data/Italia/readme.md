@@ -3,9 +3,9 @@
 <table>
   <tr>
     <td></td>    
-    <td>Andalucía</td>
-    <td>Asturias</td>
-    <td>Aragón</td>
+    <td>Abruzzo</td>
+    <td>Basilicata</td>
+    <td>Calabria</td>
   </tr>
   <tr>
   <td>Estimación</td>
