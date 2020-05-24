@@ -2,14 +2,16 @@
 Datos de Prevalencia:
 <table>
   <tr>
+    <td></td>    
     <td>Andalucía</td>
     <td>Asturias</td>
     <td>Aragón</td>
   </tr>
   <tr>
-    <td></td>
     <td>Prevalencia</td>
-    <td>4</td>
+    <td>??</td>
+    <td>??</td>    
+    <td>??</td>      
   </tr>
 </table>
 
