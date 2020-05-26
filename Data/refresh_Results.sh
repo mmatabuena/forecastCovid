@@ -2,7 +2,13 @@
 cd $HOME/Github_Pages/forecastCovid
 git pull
 
-dataUPD="20200523"
+# Se le añade la fecha a los archivos subidos
+dataUPD=$1
+if [ -z $dataUPD ]; then
+  dataUPD="20200526"
+  echo "  Fecha por defecto <$dataUPD>"
+fi
+
 
 ## Se declara el array de variables para Italia ...
 #varPais=Italia
@@ -10,8 +16,13 @@ dataUPD="20200523"
 
 
 ## Se declara el array de variables para España ...
-varPais=Espana
-declare -a arr=("Andalucia" "Aragon" "Asturias" "Baleares" "Canarias" "Cantabria" "Leon" "Mancha" "Cataluna" "Valencia" "Extremadura" "Madrid" "Murcia" "Vasco" "Rioja")
+#varPais=Espana
+#declare -a arr=("Andalucia" "Aragon" "Asturias" "Baleares" "Canarias" "Cantabria" "Leon" "Mancha" "Cataluna" "Valencia" "Extremadura" "Madrid" "Murcia" "Vasco" "Rioja")
+
+
+## Se declara el array de variables para el Mundo ...
+varPais=World
+declare -a arr=("Spain" "Italy" "Argentina" "Chile") 
 
 
 ## Se recorren todos los elementos del array de Comunidades del pais elegido
@@ -48,6 +59,8 @@ do
        cp ${FILE_ORGDIR[c]}/ParInit_Optimos_"$varRegion"_N01.txt ${FILE_DESTGITHUB[c]}/ParInit_Optimos_Sig4P.txt
        cp ${FILE_ORGDIR[c]}/ParInit_Optimos_"$varRegion"_N01.txt ${FILE_DESTGITHUB[c]}/ParInit_Optimos_Sig4P_"$dataUPD".txt
        cp ${FILE_ORGDIR[c]}/ParInit_Optimos_"$varRegion"_N01.txt ${FILE_DESTDATA[c]}/ParInit_Optimos_Sig4P.txt
+       # Para evitar que se sobreescriban una y otra vez los mismos ...
+       mv ${FILE_ORGDIR[c]}/ParInit_Optimos_"$varRegion"_N01.txt ${FILE_ORGDIR[c]}/ParInit_Optimos_"$varRegion"_N01_UPDATED.txt
     fi
     i=$(($i+1))
     c=$(($c+1));
