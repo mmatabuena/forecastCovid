@@ -81,6 +81,8 @@ distancias=(abs(mortos_raw[,ncol(mortos_raw)]-morultimodia))
 
 ```{r echo=FALSE}
 hist(distancias,main="Last day error",xlab="Individuals")
+plot(fdata(mortos_raw),main="All simulated fatality trajectories")
+
 ```
 
 

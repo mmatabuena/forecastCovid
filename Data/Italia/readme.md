@@ -36,7 +36,7 @@
   - **Piemonte**: Las trayectorias no solapan en todo el rango  
   - **Sardegna**: Las trayectorias no solapan en todo el rango    
   - **Toscana**: Las trayectorias no solapan en todo el rango    
- 
+  - **Romagna**: Las trayectorias no solapan del 16 Mar al 6 Abr
   ## Ajustes pendientes
    - **Romagna**:    
    - **Venezia**:   
