@@ -17,7 +17,7 @@ fi
 
 if [ "$Country" == "Italia" ];
 then
-declare -a arr=("Abruzzo" "Basilicata" "Calabria" "Campania" "Romagna" "Friuli" "Lazio" "Liguria" "Lombardia" "Marche" "Molise" "Bolzano" "Trento" "Piemonte" "Puglia" "Sardegna" "Sicilia" "Toscana" "Umbria" "Aosta" "Veneto" "Total")
+declare -a arr=("Abruzzo" "Basilicata" "Calabria" "Campania" "Romagna" "Friuli" "Lazio" "Liguria" "Lombardia" "Marche" "Molise" "Bolzano" "Trento" "Piemonte" "Puglia" "Sardegna" "Sicilia" "Toscana" "Umbria" "Aosta" "Veneto" "Venezia" "Total")
 fi
 
 
