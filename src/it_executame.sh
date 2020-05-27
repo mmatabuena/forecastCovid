@@ -4,7 +4,7 @@ c=0
 
 Country="Italia"
 ## Declaración del array de comunidades para lanzar los scripts
-declare -a arr=("Abruzzo" "Basilicata" "Calabria" "Campania" "Romagna" "Friuli" "Lazio" "Liguria" "Lombardia" "Marche" "Molise" "Bolzano" "Trento" "Piemonte" "Puglia" "Sardegna" "Sicilia" "Toscana" "Umbria" "Aosta" "Veneto" "Total") # IMPORTANTE colocalas na mesma orde que no arquivo Espana_ccaa_covid19_fallecidos.csv
+declare -a arr=("Abruzzo" "Basilicata" "Calabria" "Campania" "Romagna" "Friuli" "Lazio" "Liguria" "Lombardia" "Marche" "Molise" "Bolzano" "Trento" "Piemonte" "Puglia" "Sardegna" "Sicilia" "Toscana" "Umbria" "Aosta" "Veneto" "Venezia" "Total") # IMPORTANTE colocalas na mesma orde que no arquivo Espana_ccaa_covid19_fallecidos.csv
 
 ## Se recorren todos los elementos del array de Comunidades
 i=1
