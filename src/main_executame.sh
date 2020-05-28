@@ -12,12 +12,17 @@ fi
 if [ "$Country" == "Espana" ];
 then
 
-declare -a arr=("Andalucia" "Aragon" "Asturias" "Baleares" "Canarias" "Cantabria" "Leon" "Mancha" "Cataluna" "Valencia" "Extremadura" "Galicia" "Madrid" "Murcia" "Navarra" "Vasco" "Rioja" "Ceuta" "Melilla" "Total")
+declare -a arr=("Andalucia" "Aragon" "Asturias" "Baleares" "Canarias" "Cantabria" "Leon" "Mancha" "Cataluna" "Valencia" "Extremadura" "Galicia" "Madrid" "Murcia" "Navarra" "Vasco" "Rioja" "Ceuta" "Melilla")
 fi
 
 if [ "$Country" == "Italia" ];
 then
-declare -a arr=("Abruzzo" "Basilicata" "Calabria" "Campania" "Romagna" "Friuli" "Lazio" "Liguria" "Lombardia" "Marche" "Molise" "Bolzano" "Trento" "Piemonte" "Puglia" "Sardegna" "Sicilia" "Toscana" "Umbria" "Aosta" "Veneto" "Venezia" "Total")
+declare -a arr=("Abruzzo" "Basilicata" "Calabria" "Campania" "Romagna" "Friuli" "Lazio" "Liguria" "Lombardia" "Marche" "Molise" "Bolzano" "Trento" "Piemonte" "Puglia" "Sardegna" "Sicilia" "Toscana" "Umbria" "Aosta" "Veneto" "Venezia")
+fi
+
+if [ "$Country" == "World" ];
+then
+declare -a arr=("Argentina" "Mexico")
 fi
 
 
@@ -25,9 +30,10 @@ fi
 i=1
 for varRegion in "${arr[@]}"
 do
-    	sed "s/xxx/$i/g" ../Rmds/$Country/res_Zona_Test.Rmd > ../Rmds/$Country/res_$varRegion.Rmd
-	sed -i "s/Zona_Test/$varRegion/g" ../Rmds/$Country/res_$varRegion.Rmd
- if [ ! -d ../Rmds/$Country/$varRegion ];
+    sed "s/xxx/$i/g" ../Rmds/$Country/res_Zona_Test.Rmd > ../Rmds/$Country/res_$varRegion.Rmd
+    sed -i "s/Zona_Test/$varRegion/g" ../Rmds/$Country/res_$varRegion.Rmd
+
+    if [ ! -d ../Rmds/$Country/$varRegion ];
     then
       echo " ->Creando los directorios Rmd para <$varRegion>..."
       mkdir ../Rmds/$Country/$varRegion
@@ -45,21 +51,17 @@ do
     # Se comprueba que existen los archivos base ...
     if [ ! -f ${FILE_PARAM[c]} ];
     then
-	  echo "."
+      echo "."
       #echo " -> Se ha ignorado <$varRegion>, no está disponible el archivo <${FILE_PARAM[c]}.."
     else
       echo "$(tput setaf 3)-> Lanzando Scripts de C++ y R en <$varRegion> con indice <$i> ...$(tput sgr 0)"
        ./runsimular_paral 0 600 ${FILE_PARAM[c]} $varRegion $Country > ./Results/$Country/log_$varRegion.txt
       R -e "rmarkdown::render(input='../Rmds/$Country/res_$varRegion.Rmd',output_file='$varRegion/main.html',output_format='html_document')"
     fi
-    c=$(($c+1));
-
-
-	
+    c=$(($c+1))
     i=$(($i+1))
-  
-done
 
+done
 
 
 
