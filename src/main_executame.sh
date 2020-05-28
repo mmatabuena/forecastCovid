@@ -6,7 +6,7 @@ c=0
 Country=$1
 if [ -z $Country ]; then
   Country="Espana"
-  echo "  Ubicacion por defecto <$varPais>"
+  echo "  Ubicacion por defecto <$Country>"
 fi
 
 if [ "$Country" == "Espana" ];
