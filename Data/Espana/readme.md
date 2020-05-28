@@ -3,6 +3,9 @@
  - **Asturias**: Salto el día 18 Abril ??? 
  - **Canarias**: Salto el 30 Mar, 13 Abr y 24 Abr 
  - **Extremadura**: Salto el día 6 Abril ???
+  - **Cataluña**: Salto el 20 Mayo ??
+   - **Galicia**: 
+   - **Navarra**:   
 
  ## Ajustes malos de fin de trayectoria
   - **Aragon**: Las trayectorias no solapan del 23 Mar al 6 Abr
@@ -10,9 +13,6 @@
   - **Murcia**: Las trayectorias no solapan en casi todo el rango, están sobreestimadas
 
   ## Ajustes pendientes
-   - **Galicia**: 
-   - **Navarra**: 
-
 
 ## Datos de Prevalencia:
 <table>
