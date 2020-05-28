@@ -15,9 +15,7 @@ library("tidyr")
 library("ggplot2")
 
 library("fda.usc")
-# trayectorias= mortos_raw[,-1]
-# datosfda= fdata(trayectorias)
-# plot(datosfda)
+
 
 #setwd("~/Modelo_Covid_descargado/Results/Liguria/")
 

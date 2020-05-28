@@ -14,10 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 library("tidyr")
 library("ggplot2")
 
-# library("fda.usc")
-# trayectorias= mortos_raw[,-1]
-# datosfda= fdata(trayectorias)
-# plot(datosfda)
+library("fda.usc")
 
 #setwd("~/Modelo_Covid_descargado/Results/Aragon/")
 
