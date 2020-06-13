@@ -1,6 +1,2 @@
 # nInf_I1 | Dia_I1 | nInf_I2| Dia_I2 |alpha | beta | alpha1 | beta1 | alpha2 | beta2 | alpha3 | beta3 | alpha4 | beta4 | alpha5 | beta5 | alpha6 | beta6 | exp11 | exp12 | exp13 | exp21 | exp22 | exp23 | exp31 | exp32 | exp33  ...  con R0(t) = A/(1+B^(-(x-C)) + D
-0 0 2 1 0.802 0.06 5.807 0.948 5.807 0.948 9 14 6.67 2.55 5 10 7 14 1.82977 0.699683 8.22435 0.0600247 0 0 0 0 0 
-# nInf_I1 | Dia_I1 | nInf_I2| Dia_I2 |alpha | beta | alpha1 | beta1 | alpha2 | beta2 | alpha3 | beta3 | alpha4 | beta4 | alpha5 | beta5 | alpha6 | beta6 | exp11 | exp12 | exp13 | exp21 | exp22 | exp23 | exp31 | exp32 | exp33  ...  con R0(t) = A/(1+B^(-(x-C)) + D
-0 0 2 1 0.802 0.06 5.807 0.948 5.807 0.948 9 14 6.67 2.55 5 10 7 14 4.54223 0.900687 -4.45247 0.00781255 0 0 0 0 0 
-# nInf_I1 | Dia_I1 | nInf_I2| Dia_I2 |alpha | beta | alpha1 | beta1 | alpha2 | beta2 | alpha3 | beta3 | alpha4 | beta4 | alpha5 | beta5 | alpha6 | beta6 | exp11 | exp12 | exp13 | exp21 | exp22 | exp23 | exp31 | exp32 | exp33  ...  con R0(t) = A/(1+B^(-(x-C)) + D
 0 0 2 1 0.802 0.06 5.807 0.948 5.807 0.948 9 14 6.67 2.55 5 10 7 14 0.634667 0.681854 21.4052 0.0300693 0 0 0 0 0 
