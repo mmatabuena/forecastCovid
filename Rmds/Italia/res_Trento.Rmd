@@ -23,7 +23,7 @@ library("fda.usc")
 ##### CAMBIAR DENDE AQUÍ #####
 ##############################
 
-i=13 #indice da autonomia
+i=1 #indice da autonomia
 i1_raw= read.table("../../src/Results/Italia/Trento/SimulaTrento_I1.txt")
 i2_raw= read.table("../../src/Results/Italia/Trento/SimulaTrento_I2.txt")
 i3_raw= read.table("../../src/Results/Italia/Trento/SimulaTrento_I3.txt")

@@ -1,0 +1,264 @@
+indice,comunidad,poblacion
+0,aruba,105845
+1,afghanistan,37172386
+2,angola,30809762
+3,albania,2866376
+4,andorra,77006
+5,arab world,419790588
+6,united arab emirates,9630959
+7,argentina,44494502
+8,armenia,2951776
+9,american samoa,55465
+10,antigua and barbuda,96286
+11,australia,24982688
+12,austria,8840521
+13,azerbaijan,9939800
+14,burundi,11175378
+15,belgium,11433256
+16,benin,11485048
+17,burkina faso,19751535
+18,bangladesh,161356039
+19,bulgaria,7025037
+20,bahrain,1569439
+21,"bahamas, the",385640
+22,bosnia and herzegovina,3323929
+23,belarus,9483499
+24,belize,383071
+25,bermuda,63973
+26,bolivia,11353142
+27,brazil,209469333
+28,barbados,286641
+29,brunei darussalam,428962
+30,bhutan,754394
+31,botswana,2254126
+32,central african republic,4666377
+33,canada,37057765
+34,central europe and the baltics,102511922
+35,switzerland,8513227
+36,channel islands,170499
+37,chile,18729160
+38,china,1392730000
+39,cote d'ivoire,25069229
+40,cameroon,25216237
+41,"congo, dem. rep.",84068091
+42,"congo, rep.",5244363
+43,colombia,49648685
+44,comoros,832322
+45,cabo verde,543767
+46,costa rica,4999441
+47,caribbean small states,7358965
+48,cuba,11338138
+49,curacao,159800
+50,cayman islands,64174
+51,cyprus,1189265
+52,czech republic,10629928
+53,germany,82905782
+54,djibouti,958920
+55,dominica,71625
+56,denmark,5793636
+57,dominican republic,10627165
+58,algeria,42228429
+59,east asia & pacific (excluding high income),2081651801
+60,early-demographic dividend,3249140605
+61,east asia & pacific,2328220870
+62,europe & central asia (excluding high income),417797257
+63,europe & central asia,918793590
+64,ecuador,17084357
+65,"egypt, arab rep.",98423595
+66,euro area,341783171
+67,eritrea,3213972
+68,spain,46796540
+69,estonia,1321977
+70,ethiopia,109224559
+71,european union,446786293
+72,fragile and conflict affected situations,743958386
+73,finland,5515525
+74,fiji,883483
+75,france,66977107
+76,faroe islands,48497
+77,"micronesia, fed. sts.",112640
+78,gabon,2119275
+79,united kingdom,66460344
+80,georgia,3726549
+81,ghana,29767108
+82,gibraltar,33718
+83,guinea,12414318
+84,"gambia, the",2280102
+85,guinea-bissau,1874309
+86,equatorial guinea,1308974
+87,greece,10731726
+88,grenada,111454
+89,greenland,56025
+90,guatemala,17247807
+91,guam,165768
+92,guyana,779004
+93,high income,1210312147
+94,"hong kong sar, china",7451000
+95,honduras,9587522
+96,heavily indebted poor countries (hipc),780234406
+97,croatia,4087843
+98,haiti,11123176
+99,hungary,9775564
+100,ibrd only,4772284113
+101,ida & ibrd total,6412522234
+102,ida total,1640238121
+103,ida blend,555830605
+104,indonesia,267663435
+105,ida only,1084407516
+106,isle of man,84077
+107,india,1352617328
+108,ireland,4867309
+109,"iran, islamic rep.",81800269
+110,iraq,38433600
+111,iceland,352721
+112,israel,8882800
+113,italy,60421760
+114,jamaica,2934855
+115,jordan,9956011
+116,japan,126529100
+117,kazakhstan,18272430
+118,kenya,51393010
+119,kyrgyz republic,6322800
+120,cambodia,16249798
+121,kiribati,115847
+122,st. kitts and nevis,52441
+123,"korea, rep.",51606633
+124,kuwait,4137309
+125,latin america & caribbean (excluding high income),609013934
+126,lao pdr,7061507
+127,lebanon,6848925
+128,liberia,4818977
+129,libya,6678567
+130,st. lucia,181889
+131,latin america & caribbean,641357515
+132,least developed countries: un classification,1009662578
+133,low income,705417321
+134,liechtenstein,37910
+135,sri lanka,21670000
+136,lower middle income,3022905169
+137,low & middle income,6383958209
+138,lesotho,2108132
+139,late-demographic dividend,2288665963
+140,lithuania,2801543
+141,luxembourg,607950
+142,latvia,1927174
+143,"macao sar, china",631636
+144,st. martin (french part),37264
+145,morocco,36029138
+146,monaco,38682
+147,moldova,2706049
+148,madagascar,26262368
+149,maldives,515696
+150,middle east & north africa,448912859
+151,mexico,126190788
+152,marshall islands,58413
+153,middle income,5678540888
+154,north macedonia,2082958
+155,mali,19077690
+156,malta,484630
+157,myanmar,53708395
+158,middle east & north africa (excluding high income),382896715
+159,montenegro,622227
+160,mongolia,3170208
+161,northern mariana islands,56882
+162,mozambique,29495962
+163,mauritania,4403319
+164,mauritius,1265303
+165,malawi,18143315
+166,malaysia,31528585
+167,north america,364290258
+168,namibia,2448255
+169,new caledonia,284060
+170,niger,22442948
+171,nigeria,195874740
+172,nicaragua,6465513
+173,netherlands,17231624
+174,norway,5311916
+175,nepal,28087871
+176,nauru,12704
+177,new zealand,4841000
+178,oecd members,1303529456
+179,oman,4829483
+180,other small states,30758989
+181,pakistan,212215030
+182,panama,4176873
+183,peru,31989256
+184,philippines,106651922
+185,palau,17907
+186,papua new guinea,8606316
+187,poland,37974750
+188,pre-demographic dividend,919485393
+189,puerto rico,3195153
+190,"korea, dem. people’s rep.",25549819
+191,portugal,10283822
+192,paraguay,6956071
+193,west bank and gaza,4569087
+194,pacific island small states,2457367
+195,post-demographic dividend,1109997273
+196,french polynesia,277679
+197,qatar,2781677
+198,romania,19466145
+199,russian federation,144478050
+200,rwanda,12301939
+201,south asia,1814388744
+202,saudi arabia,33699947
+203,sudan,41801533
+204,senegal,15854360
+205,singapore,5638676
+206,solomon islands,652858
+207,sierra leone,7650154
+208,el salvador,6420744
+209,san marino,33785
+210,somalia,15008154
+211,serbia,6982604
+212,sub-saharan africa (excluding high income),1078209758
+213,south sudan,10975920
+214,sub-saharan africa,1078306520
+215,small states,40575321
+216,sao tome and principe,211028
+217,suriname,575991
+218,slovak republic,5446771
+219,slovenia,2073894
+220,sweden,10175214
+221,eswatini,1136191
+222,sint maarten (dutch part),40654
+223,seychelles,96762
+224,syrian arab republic,16906283
+225,turks and caicos islands,37665
+226,chad,15477751
+227,east asia & pacific (ida & ibrd countries),2056064424
+228,europe & central asia (ida & ibrd countries),459865205
+229,togo,7889094
+230,thailand,69428524
+231,tajikistan,9100837
+232,turkmenistan,5850908
+233,latin america & the caribbean (ida & ibrd countries),625569713
+234,timor-leste,1267972
+235,middle east & north africa (ida & ibrd countries),378327628
+236,tonga,103197
+237,south asia (ida & ibrd),1814388744
+238,sub-saharan africa (ida & ibrd countries),1078306520
+239,trinidad and tobago,1389858
+240,tunisia,11565204
+241,turkey,82319724
+242,tuvalu,11508
+243,tanzania,56318348
+244,uganda,42723139
+245,ukraine,44622516
+246,upper middle income,2655635719
+247,uruguay,3449299
+248,united states,326687501
+249,uzbekistan,32955400
+250,st. vincent and the grenadines,110210
+251,venezuela,28870195
+252,british virgin islands,29802
+253,virgin islands (u.s.),106977
+254,vietnam,95540395
+255,vanuatu,292680
+256,world,7594270356
+257,samoa,196130
+258,kosovo,1845300
+259,"yemen, rep.",28498687
+260,south africa,57779622
+261,zambia,17351822
+262,zimbabwe,14439018

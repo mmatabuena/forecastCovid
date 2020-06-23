@@ -23,7 +23,7 @@ library("fda.usc")
 ##### CAMBIAR DENDE AQUÍ #####
 ##############################
 
-i=20 #indice da autonomia
+i=2 #indice da autonomia
 i1_raw= read.table("../../src/Results/Italia/Aosta/SimulaAosta_I1.txt")
 i2_raw= read.table("../../src/Results/Italia/Aosta/SimulaAosta_I2.txt")
 i3_raw= read.table("../../src/Results/Italia/Aosta/SimulaAosta_I3.txt")

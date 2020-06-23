@@ -23,7 +23,7 @@ library("fda.usc")
 ##### CAMBIAR DENDE AQUÍ #####
 ##############################
 
-i=21 #indice da autonomia
+i=2 #indice da autonomia
 i1_raw= read.table("../../src/Results/Italia/Veneto/SimulaVeneto_I1.txt")
 i2_raw= read.table("../../src/Results/Italia/Veneto/SimulaVeneto_I2.txt")
 i3_raw= read.table("../../src/Results/Italia/Veneto/SimulaVeneto_I3.txt")

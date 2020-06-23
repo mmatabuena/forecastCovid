@@ -23,7 +23,7 @@ library("fda.usc")
 ##### CAMBIAR DENDE AQUÍ #####
 ##############################
 
-i=19 #indice da autonomia
+i=1 #indice da autonomia
 i1_raw= read.table("../../src/Results/Italia/Umbria/SimulaUmbria_I1.txt")
 i2_raw= read.table("../../src/Results/Italia/Umbria/SimulaUmbria_I2.txt")
 i3_raw= read.table("../../src/Results/Italia/Umbria/SimulaUmbria_I3.txt")

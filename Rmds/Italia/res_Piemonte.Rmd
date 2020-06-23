@@ -23,7 +23,7 @@ library("fda.usc")
 ##### CAMBIAR DENDE AQUÍ #####
 ##############################
 
-i=14 #indice da autonomia
+i=1 #indice da autonomia
 i1_raw= read.table("../../src/Results/Italia/Piemonte/SimulaPiemonte_I1.txt")
 i2_raw= read.table("../../src/Results/Italia/Piemonte/SimulaPiemonte_I2.txt")
 i3_raw= read.table("../../src/Results/Italia/Piemonte/SimulaPiemonte_I3.txt")
