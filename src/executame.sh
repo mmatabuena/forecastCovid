@@ -9,7 +9,7 @@ if [ -z $Country ]; then
   echo "  Ubicacion por defecto <$Country>"
 fi
 
-# VERSION MANUAL: 
+# PARA A VERSION TERRITORIO A TERRITORIO 
 #Escribir en lista_$Country os territorios nos que queremos lanzar
 #e comentar a seguinte linha
 #ls -d ../Data/$Country/*/ | cut -d'/' -f 4 > lista_$Country.dat 
@@ -57,10 +57,14 @@ i=`grep -i $varRegion dep2.csv | cut -d',' -f 1`
       R -e "rmarkdown::render(input='../Rmds/$Country/res_$varRegion.Rmd',output_file='$varRegion/main.html',output_format='html_document')"
     fi
     c=$(($c+1))
-   
+
+
 
 done
 
+rm dep1.csv
+rm dep2.csv
+   
 
 
 
