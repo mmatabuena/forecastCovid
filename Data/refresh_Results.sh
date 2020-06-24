@@ -5,9 +5,16 @@ git pull
 # Se le añade la fecha a los archivos subidos
 dataUPD=$1
 if [ -z $dataUPD ]; then
-  dataUPD="20200526"
-  echo "  Fecha por defecto <$dataUPD>"
+  dataUPD=`date +"%Y%m%d"`
+  echo "  Fecha actual por defecto <$dataUPD>"
 fi
+
+module load gcc/6.5.0
+
+# Se pegan los archivos de actualización modificados en
+cp $HOME/Test_CPP/dataset_update.py $HOME/Github_Pages/forecastCovid/Data/dataset_update.py
+cp $HOME/Test_CPP/refresh_Results.sh $HOME/Github_Pages/forecastCovid/Data/refresh_Results.sh
+cp $HOME/Test_CPP/update_Data.sh $HOME/Github_Pages/forecastCovid/Data/update_Data.sh
 
 
 ## Se declara el array de variables para Italia ...
@@ -17,12 +24,22 @@ fi
 
 ## Se declara el array de variables para España ...
 #varPais=Espana
-#declare -a arr=("Andalucia" "Aragon" "Asturias" "Baleares" "Canarias" "Cantabria" "Leon" "Mancha" "Cataluna" "Valencia" "Extremadura" "Madrid" "Murcia" "Vasco" "Rioja")
+#declare -a arr=("Andalucia" "Aragon" "Asturias" "Baleares" "Canarias" "Cantabria" "Leon" "Mancha" "Cataluna" "Valencia" "Extremadura" "Madrid" "Murcia" "Vasco" "Rioja" "Galicia" "Navarra")
 
 
-## Se declara el array de variables para el Mundo ...
+## Se declara el array de variables para America Latina ...
+#varPais=World
+#declare -a arr=( "Argentina" "Brasil" "Bolivia" "Chile" "Colombia" "Costa" "Cuba" "Ecuador" "Honduras" "Guatemala" "Mexico" "Nicaragua" "Paraguay" "Peru" "Puerto" "Dominican" "Salvador" "Uruguay" "Venezuela" )
+
+
+## Se declara el array de variables para Otros Paises ...
+#varPais=World
+#declare -a arr=("Spain" "Italy") 
+
+
+## Se declara el array de variables para Otros Paises ...
 varPais=World
-declare -a arr=("Spain" "Italy" "Argentina" "Chile") 
+declare -a arr=( "Algeria" "Egypt" "Libya" "Morocco" "Sudan" "Tunisia" )
 
 
 ## Se recorren todos los elementos del array de Comunidades del pais elegido
@@ -59,20 +76,28 @@ do
        cp ${FILE_ORGDIR[c]}/ParInit_Optimos_"$varRegion"_N01.txt ${FILE_DESTGITHUB[c]}/ParInit_Optimos_Sig4P.txt
        cp ${FILE_ORGDIR[c]}/ParInit_Optimos_"$varRegion"_N01.txt ${FILE_DESTGITHUB[c]}/ParInit_Optimos_Sig4P_"$dataUPD".txt
        cp ${FILE_ORGDIR[c]}/ParInit_Optimos_"$varRegion"_N01.txt ${FILE_DESTDATA[c]}/ParInit_Optimos_Sig4P.txt
+       cp ${FILE_ORGDIR[c]}/ParInit_Optimos_"$varRegion"_N01.txt ${FILE_DESTDATA[c]}/ParInit_Optimos_Sig4P_"$dataUPD".txt
        # Para evitar que se sobreescriban una y otra vez los mismos ...
        mv ${FILE_ORGDIR[c]}/ParInit_Optimos_"$varRegion"_N01.txt ${FILE_ORGDIR[c]}/ParInit_Optimos_"$varRegion"_N01_UPDATED.txt
+
+       # Y se actualizan los resultados usando esos parametros
+       cd $HOME/Test_CPP/Ejemplo_003
+       echo "   -> Simulando 300 repeticiones usando esos parámetros"
+       ./runsimular_paral 0 300 ../Data/"$varPais"/"$varRegion"/ParInit_Optimos_Sig4P.txt "$varRegion" "$varPais" > res_"$varRegion"_"$varPais".txt
+       i=$(($i+1))
     fi
-    i=$(($i+1))
-    c=$(($c+1));
+    c=$(($c+1))
 done
 
 
-
-
-
-
+# Si no se ha actualizado ningún archivo se avisa
+if [ $i -eq 1 ];
+then
+  echo "   -> Ya están actualizados los $c archivos de $varPais"
+fi
 
 
 # CODIGO no usado ...
 # declare -a arr=("Abruzzo" "Aosta" "Basilicata" "Bolzano" "Calabria" "Campania" "Lazio" "Liguria" "Marche" "Piemonte" "Puglia" "Sardegna" "Sicilia" "Toscana" "Trento" "Umbria" "Venezia" )
+
 
