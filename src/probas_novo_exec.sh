@@ -9,10 +9,12 @@ if [ -z $Country ]; then
   echo "  Ubicacion por defecto <$Country>"
 fi
 
-
-echo "  Intentando recuperar datos dos seguintes territorios"
+# VERSION MANUAL: 
+#Escribir en lista_$Country os territorios nos que queremos lanzar
+#e comentar a seguinte linha
 ls -d ../Data/$Country/*/ | cut -d'/' -f 4 > lista_$Country.dat 
-sed 's/.*/"&"/' lista_$Country.dat
+##########
+
 declare -a arr
 mapfile -t arr < lista_$Country.dat
 
@@ -58,6 +60,9 @@ echo "O indice $i"
    
 
 done
+
+rm dep1.csv
+rm dep2.csv
 
 
 
