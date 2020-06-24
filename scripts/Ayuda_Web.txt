@@ -3,3 +3,6 @@ https://www.webfx.com/tools/emoji-cheat-sheet/
 
 La info de cómo insertar listas y otros formatos está aquí:
 https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax#using-emoji
+
+Secciones desplegables ...
+https://www.w3schools.com/howto/howto_js_collapsible.asp
