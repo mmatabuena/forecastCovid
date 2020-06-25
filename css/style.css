@@ -33,7 +33,8 @@ li {
   background-color: transparent;
   /*color: #444;*/
   cursor: pointer;
-  padding: 18px;
+  padding-left: 10px;
+  padding-right: 18px;
   /*width: 100%;*/
   border: none;
   text-align: left;
