@@ -26,7 +26,7 @@ iconv -f utf8 -t ascii//TRANSLIT dep1.csv -o dep2.csv
 
 for varRegion in "${arr[@]}"
 do
-i=`grep -i $varRegion dep2.csv | cut -d',' -f 1`
+i=`grep -i $varRegion dep2.csv | head -1 | cut -d',' -f 1`
 
     sed "s/xxx/$i/g" ../Rmds/$Country/res_Zona_Test.Rmd > ../Rmds/$Country/res_$varRegion.Rmd
     sed -i "s/Zona_Test/$varRegion/g" ../Rmds/$Country/res_$varRegion.Rmd
