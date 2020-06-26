@@ -20,6 +20,8 @@ if __name__ == "__main__":
 	# Correccion de las dos regiones que no coinciden los códigos ISO y los nombres
 	df_iso_codes.loc[(df_iso_codes['alpha-3']=='BOL'),'name']='Bolivia'
 	df_iso_codes.loc[(df_iso_codes['alpha-3']=='VEN'),'name']='Venezuela'
+	# Eliminación de sudan del sur para evitar conflictos de nombres
+	df_iso_codes = df_iso_codes.drop(df_iso_codes[df_iso_codes['alpha-3']=='SSD'].index)
 	#df_iso_codes.to_csv('./Data/World/Iso_Filter.csv',index_label='Indice')
 
 	# Combinación de ambas tablas ...
@@ -35,4 +37,7 @@ if __name__ == "__main__":
 
 	# Correccion de las regiones que no coinciden los nombres con los del archivo de Isos
 	df_population.loc[(df_population['Comunidad']=='Venezuela, RB'),'Comunidad']='Venezuela'
+	# Eliminación de sudan del sur para evitar conflictos de nombres
+	df_population = df_population.drop(df_population[df_population['Comunidad']=='South Sudan'].index)
 	df_population.to_csv('./Data/World/World_Poblacion.csv',index_label='Indice')
+

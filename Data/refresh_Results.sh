@@ -11,11 +11,6 @@ fi
 
 module load gcc/6.5.0
 
-# Se pegan los archivos de actualización modificados en
-cp $HOME/Test_CPP/dataset_update.py $HOME/Github_Pages/forecastCovid/Data/dataset_update.py
-cp $HOME/Test_CPP/refresh_Results.sh $HOME/Github_Pages/forecastCovid/Data/refresh_Results.sh
-cp $HOME/Test_CPP/update_Data.sh $HOME/Github_Pages/forecastCovid/Data/update_Data.sh
-
 
 ## Se declara el array de variables para Italia ...
 #varPais=Italia

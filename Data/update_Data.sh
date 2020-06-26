@@ -53,6 +53,11 @@ echo " Actualizando el Github"
 cd $HOME/Github_Pages/forecastCovid
 git pull
 
+# Se pegan los archivos de actualización modificados en
+cp $HOME/Test_CPP/dataset_update.py $HOME/Github_Pages/forecastCovid/Data/dataset_update.py
+cp $HOME/Test_CPP/refresh_Results.sh $HOME/Github_Pages/forecastCovid/Data/refresh_Results.sh
+cp $HOME/Test_CPP/update_Data.sh $HOME/Github_Pages/forecastCovid/Data/update_Data.sh
+
 cp $HOME/Test_CPP/Data/Espana/Espana_Fallecidos.csv $HOME/Github_Pages/forecastCovid/Data/Espana/Espana_Fallecidos.csv
 cp $HOME/Test_CPP/Data/Espana/Espana_Poblacion.csv $HOME/Github_Pages/forecastCovid/Data/Espana/Espana_Poblacion.csv
 cp $HOME/Test_CPP/Data/World/World_Fallecidos.csv $HOME/Github_Pages/forecastCovid/Data/World/World_Fallecidos.csv
