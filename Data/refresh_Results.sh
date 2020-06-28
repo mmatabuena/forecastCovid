@@ -23,8 +23,8 @@ module load gcc/6.5.0
 
 
 ## Se declara el array de variables para America Latina ...
-#varPais=World
-#declare -a arr=( "Argentina" "Brasil" "Bolivia" "Chile" "Colombia" "Costa" "Cuba" "Ecuador" "Honduras" "Guatemala" "Mexico" "Nicaragua" "Paraguay" "Peru" "Puerto" "Dominican" "Salvador" "Uruguay" "Venezuela" )
+varPais=World
+declare -a arr=( "Argentina" "Brazil" "Bolivia" "Chile" "Colombia" "Costa" "Cuba" "Ecuador" "Honduras" "Guatemala" "Mexico" "Nicaragua" "Paraguay" "Peru" "Dominican" "Salvador" "Uruguay" "Venezuela" )
 
 
 ## Se declara el array de variables para Otros Paises ...
@@ -33,8 +33,8 @@ module load gcc/6.5.0
 
 
 ## Se declara el array de variables para Otros Paises ...
-varPais=World
-declare -a arr=( "Algeria" "Egypt" "Libya" "Morocco" "Sudan" "Tunisia" )
+#varPais=World
+#declare -a arr=( "Algeria" "Egypt" "Libya" "Morocco" "Sudan" "Tunisia" )
 
 
 ## Se recorren todos los elementos del array de Comunidades del pais elegido

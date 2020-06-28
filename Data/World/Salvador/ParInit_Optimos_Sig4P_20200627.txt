@@ -1,2 +1,2 @@
 # nInf_I1 | Dia_I1 | nInf_I2| Dia_I2 |alpha | beta | alpha1 | beta1 | alpha2 | beta2 | alpha3 | beta3 | alpha4 | beta4 | alpha5 | beta5 | alpha6 | beta6 | exp11 | exp12 | exp13 | exp21 | exp22 | exp23 | exp31 | exp32 | exp33  ... <106> días, con R0(t) = A/(1+B^(-(x-C)) + D
-0 0 2 1 0.802 0.06 5.807 0.948 5.807 0.948 9 14 6.67 2.55 5 10 7 14 1.73856 0.216222 4.88034 0.0646431 0 0 0 0 0 
+0 0 2 1 0.802 0.06 5.807 0.948 5.807 0.948 9 14 6.67 2.55 5 10 7 14 1.52553 0.00763068 5.23707 0.0681675 0 0 0 0 0 
