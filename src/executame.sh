@@ -12,7 +12,7 @@ fi
 # PARA A VERSION TERRITORIO A TERRITORIO 
 #Escribir en lista_$Country os territorios nos que queremos lanzar
 #e comentar a seguinte linha
-#ls -d ../Data/$Country/*/ | cut -d'/' -f 4 > lista_$Country.dat 
+ls -d ../Data/$Country/*/ | cut -d'/' -f 4 > lista_$Country.dat 
 ##########
 
 declare -a arr

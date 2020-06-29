@@ -51,7 +51,7 @@ reais=read.csv("../../Data/World/World_Fallecidos.csv",header=TRUE,sep=',')
 nomei=as.character(autonomias$Comunidad[(autonomias[,1])==i])
 poboacioni=as.numeric(autonomias[(autonomias[,1])==i,])[3]
 
-reaisi=as.numeric(reais[(reais$name)=="Egypt",])
+reaisi=as.numeric(reais[(reais$name)==nomei,])
 
 nceros=0
 j=0
