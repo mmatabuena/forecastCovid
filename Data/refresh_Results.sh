@@ -23,8 +23,8 @@ module load gcc/6.5.0
 
 
 ## Se declara el array de variables para America Latina ...
-varPais=World
-declare -a arr=( "Argentina" "Brazil" "Bolivia" "Chile" "Colombia" "Costa" "Cuba" "Ecuador" "Honduras" "Guatemala" "Mexico" "Nicaragua" "Paraguay" "Peru" "Dominican" "Salvador" "Uruguay" "Venezuela" )
+#varPais=World
+#declare -a arr=( "Argentina" "Brazil" "Bolivia" "Chile" "Colombia" "Costa" "Cuba" "Ecuador" "Honduras" "Guatemala" "Mexico" "Nicaragua" "Paraguay" "Peru" "Dominican" "Salvador" "Uruguay" "Venezuela" )
 
 
 ## Se declara el array de variables para Otros Paises ...
@@ -33,8 +33,8 @@ declare -a arr=( "Argentina" "Brazil" "Bolivia" "Chile" "Colombia" "Costa" "Cuba
 
 
 ## Se declara el array de variables para Otros Paises ...
-#varPais=World
-#declare -a arr=( "Algeria" "Egypt" "Libya" "Morocco" "Sudan" "Tunisia" )
+varPais=World
+declare -a arr=( "Algeria" "Egypt" "Libya" "Morocco" "Sudan" "Tunisia" )
 
 
 ## Se recorren todos los elementos del array de Comunidades del pais elegido
@@ -89,7 +89,14 @@ done
 if [ $i -eq 1 ];
 then
   echo "   -> Ya están actualizados los $c archivos de $varPais"
+else
+  cd $HOME/Github_Pages/forecastCovid
+  git add .
+  git commit -m"upd %dataUPD"
+  git push
 fi
+
+
 
 
 # CODIGO no usado ...
