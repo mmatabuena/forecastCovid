@@ -75,26 +75,34 @@ function updateImages(){
   $('#Link_Github').prop('text',language.Pie03); 
 }
 
-$(document).ready(function(){
-  getLanguage();
-  getRegion();
-  updateTexts();
-  updateImages();
-  //console.log("Lang: <" + localStorage.getItem('language') + ">, Reg: <" + localStorage.getItem('selRegionLongName') + ">");
-});
-
 // Gestión de las secciones desplegables
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
+function assignEventClick(){
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+  for (i = 0; i < coll.length; i++) {
+   // A cada objeto de la clase collapsible se le asigna un evento
+   coll[i].addEventListener("click", function() {
+    // Se activa la propiedad de desplegar
     this.classList.toggle("active");
+    // Se conmuta el estado actual al hacer click
     var content = this.nextElementSibling;
     if (content.style.display === "block") {
       content.style.display = "none";
     } else {
       content.style.display = "block";
     }
-  });
+   });
+  }
 }
+
+$(document).ready(function(){
+  getLanguage();
+  getRegion();
+  updateTexts();
+  updateImages();
+  assignEventClick();
+  //console.log("Lang: <" + localStorage.getItem('language') + ">, Reg: <" + localStorage.getItem('selRegionLongName') + ">");
+});
+
+
+
