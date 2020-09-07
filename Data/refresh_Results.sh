@@ -88,12 +88,13 @@ done
 # Si no se ha actualizado ningún archivo se avisa
 if [ $i -eq 1 ];
 then
-  echo "   -> Ya están actualizados los $c archivos de $varPais"
+  echo "Ya están actualizados los $c archivos de $varPais"
 else
-  echo "   -> Se han subido los $c archivos de $varPais al Github"
+  echo "Se han subido los $c archivos de $varPais al Github"
+  echo "."
   cd $HOME/Github_Pages/forecastCovid
   git add .
-  git commit -m"upd %dataUPD"
+  git commit -m"upd $dataUPD"
   git push
 fi
 
