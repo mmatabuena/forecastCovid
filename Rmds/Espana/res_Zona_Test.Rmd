@@ -40,8 +40,10 @@ r1_raw$V1=r1_raw$V1+1
 r2_raw$V1=r2_raw$V1+1
 mortos_raw$V1=mortos_raw$V1+1
 
+# Se lee la información de población de todas las autonomías
 autonomias=read.csv("../../Data/Espana/Espana_Poblacion.csv",header=TRUE,sep=',')
 
+# Se lee el listado de fallecidos de todas las autonomías
 reais=read.csv("../../Data/Espana/Espana_Fallecidos.csv",header=TRUE,sep=',')
 
 ####################
@@ -50,6 +52,7 @@ reais=read.csv("../../Data/Espana/Espana_Fallecidos.csv",header=TRUE,sep=',')
 poboacioni=as.numeric(autonomias[(autonomias[,1])==i,])[3]
 reaisi=as.numeric(reais[(reais[,1])==i,])
 
+# Se cuenta cuantos ceros hay al inicio del listado de muertes
 nceros=0
 j=0
 while(reaisi[j+3]==0) {
@@ -57,11 +60,11 @@ while(reaisi[j+3]==0) {
   j=j+1
   }
 
-
-
+# Se hace el calculo de la fecha de inicio usando el núero de columnas del archivo de muertes
 d=ncol(mortos_raw)
-r= 18-nceros#numero de dias con antelacion cos que empeza o simulador
+r= 18-nceros #numero de dias con antelacion cos que empeza o simulador
 
+# Aquí se debería leer la fecha de inicio desde el archivo "Espana_Fallecidos.csv"
 datas=seq( as.Date("2020-08-13")-r, by=1, len=d-1)
 names(i1_raw)[-1]=format(datas,"%Y-%m-%d")
 names(i2_raw)[-1]=format(datas,"%Y-%m-%d")
@@ -69,7 +72,6 @@ names(i3_raw)[-1]=format(datas,"%Y-%m-%d")
 names(r1_raw)[-1]=format(datas,"%Y-%m-%d")
 names(r2_raw)[-1]=format(datas,"%Y-%m-%d")
 names(mortos_raw)[-1]=format(datas,"%Y-%m-%d")
-
 
 
 morultimodia=as.double(erro[1])
