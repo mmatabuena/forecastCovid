@@ -1,6 +1,6 @@
 ---
 title: "Resultados"
-author: "Carlos Meijide Garcia"
+author: "Carlos Meijide Garcia y Marcos Matabuena"
 output:
   html_document: default
   pdf_document: default
