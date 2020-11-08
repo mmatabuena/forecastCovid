@@ -62,7 +62,7 @@ while(reaisi[j+3]==0) {
 d=ncol(mortos_raw)
 r= 18-nceros#numero de dias con antelacion cos que empeza o simulador
 
-datas=seq( as.Date("2020-03-04")-r, by=1, len=d-1)
+datas=seq( as.Date("2020-08-13")-r, by=1, len=d-1)
 names(i1_raw)[-1]=format(datas,"%Y-%m-%d")
 names(i2_raw)[-1]=format(datas,"%Y-%m-%d")
 names(i3_raw)[-1]=format(datas,"%Y-%m-%d")
