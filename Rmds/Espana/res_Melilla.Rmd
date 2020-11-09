@@ -80,6 +80,39 @@ distancias=(abs(mortos_raw[,ncol(mortos_raw)]-morultimodia))
 hist(distancias,main="Last day error",xlab="Individuals")
 plot(fdata(mortos_raw),main="All simulated fatality trajectories")
 
+
+
+parametros= read.table("../../src/Results/Espana/Melilla/SimulaMelilla_Param.txt")
+parametros= parametros[19:22]
+
+fn= function(t, parametros){
+  
+  result= numeric(length(t))
+  
+  for(i in 1:length(t)){
+ result[i]= parametros[1]/(1+parametros[2]^(-(t[i]-parametros[3])))+parametros[4]
+}
+
+result=unlist(result)
+
+return(result)
+
+}
+
+
+mortos_rawd= ncol(mortos_raw)
+r0t= fn(1:(mortos_rawd-1), parametros )  
+dias= colnames(mortos_raw)[-c(1)]
+plot(r0t~as.Date(dias), type="l", wd=3 , col=rgb(0.1,0.7,0.1,0.8) , ylab="R0(t)" , xlab="date" , bty="l" , pch=20 , cex=4)
+
+
+
+
+
+
+
+
+
 ```
 
 
